@@ -1,0 +1,30 @@
+/*登陆注册*/
+.LoginB{ overflow:hidden;}
+.LoginB .tl span{color:#E53E40;}
+.LoginB .tl u a{color:#F47109;}
+.LoginB .form-horizontal li{padding-top:10px;}
+.form-horizontal label{width:180px;text-align:right;}
+/*会员中心*/
+.RocfCul_list dl dt em{width:91px;height:26px;display:block;background-position:-738px -183px;vertical-align:middle;}
+.Logo_box{}
+.userimg{ width:120px; height:120px; overflow:hidden;}
+
+/*修改密码*/
+.Perpaw_cont{margin-top:20px;padding:0 30px;}
+.Perpaw_cont ul li{overflow:hidden;padding:15px;text-align:center;}
+.Perpaw_cont ul li span{float:left;line-height:30px;width:100px;text-align:right;}
+
+/*发布信息*/
+.PerRel_cont{margin-top:20px;}
+.PerRel_cont ul li{overflow:hidden;padding:15px;text-align:center;}
+.PerRel_cont ul li span{float:left;line-height:30px;width:100px;text-align:right;}
+
+.PerRel_myinfo{margin-top:20px;}
+.PerRel_myinfo .table thead tr th{border-bottom:none;text-align:center;}
+.PerRel_myinfo .table tbody tr td{text-align:center;}
+.PerRel_word{}
+.PerRel_word p{line-height:25px;}
+.PerRel_word a{line-height:25px;color:#b2b2b2;}
+.PerRel_btn{text-align:center;}
+.PerRel_btn a{width:220px;height:40px;line-height:40px;text-align:center;display:inline-block;border:1px solid #cccccc;}
+.PerRel_btn a:hover{background:#f2f2f2;}
