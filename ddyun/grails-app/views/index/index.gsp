@@ -8,14 +8,13 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'css.css')}" type="text/css">
-
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/css.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="Ibigbg_box" style="background:url(${resource(dir:'images',file:'Ibg.png')}) center top no-repeat;">
+<div class="Ibigbg_box" style="background:url(../images/Ibg.png) center top no-repeat;">
 <div class="container relative">
 <div class="row">
 	<!--登录注册 开始-->
@@ -41,7 +40,7 @@
         <!--导航列表 结束-->
         
         <!--logo 开始-->
-        <div class="Logo_box"><img src="${resource(dir:'images/temp',file:'logo.png')}"/></div>
+        <div class="Logo_box"><img src="../images/temp/logo.png"></div>
         <!--logo 结束-->
     </div>
     <!--导航 结束-->
@@ -56,7 +55,7 @@
             <!--新闻内容 开始-->
             <div class="Ireal_cont">
             	<!--展示图片 开始-->
-                <div class="Ireal_img"><img src="${resource(dir:'images',file:'road.png')}"/></div>
+                <div class="Ireal_img"><img src="../images/road.png"></div>
                 <!--展示图片 结束-->
                 
                 <!--新闻列表 开始-->
@@ -109,14 +108,14 @@
         <div class="Ishow_border">
         	<ul>
             	<!--循环li 5个 开始-->
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
                 <!--例 删除 结束-->
             </ul>
         </div>
@@ -177,7 +176,7 @@
 <div class="container">
 <div class="row">
 	<div class="foot_box">
-    	<div class="foot_logo"><img src="${resource(dir:'images/temp',file:'logo.png')}"/></div>
+    	<div class="foot_logo"><img src="../images/temp/logo.png"></div>
         <div class="foot_copy">
         	<ul>
             	<li>
@@ -186,8 +185,8 @@
                     <dd><a href=".html">友情链接2</a></dd>
                     <dd><a href=".html">友情链接3</a></dd>
                 </li>
-                <li><span class="mr-20">地址：上海xxxxxxxxxxxxxxxxxxxxxx</span><i>4006123123</i></li>
-                <li>COPYRIGHT 2016上海大度云ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
+                <li><span class="mr-20">地址：山东xxxxxxxxxxxxxxxxxxxxxx</span><i>4006123123</i></li>
+                <li>COPYRIGHT 2016山东极站网络科技ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
             </ul>
         </div>
     </div>
@@ -196,7 +195,7 @@
 </footer>
 <!--底部版权 结束-->
 
-<script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.min.js')}" ></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
 <script>
 function tabShow(obj,prex,num){
 	//选项卡样式变化
