@@ -8,13 +8,13 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
-<link href="../css/css.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/css.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="Ibigbg_box" style="background:url(../images/Ibg.png) center top no-repeat;">
+<div class="Ibigbg_box" style="background:url(images/Ibg.png) center top no-repeat;">
 <div class="container relative">
 <div class="row">
 	<!--登录注册 开始-->
@@ -40,7 +40,7 @@
         <!--导航列表 结束-->
         
         <!--logo 开始-->
-        <div class="Logo_box"><img src="../images/temp/logo.png"></div>
+        <div class="Logo_box"><img src="images/temp/logo.png"></div>
         <!--logo 结束-->
     </div>
     <!--导航 结束-->
@@ -55,7 +55,7 @@
             <!--新闻内容 开始-->
             <div class="Ireal_cont">
             	<!--展示图片 开始-->
-                <div class="Ireal_img"><img src="../images/road.png"></div>
+                <div class="Ireal_img"><img src="images/road.png"></div>
                 <!--展示图片 结束-->
                 
                 <!--新闻列表 开始-->
@@ -108,14 +108,14 @@
         <div class="Ishow_border">
         	<ul>
             	<!--循环li 5个 开始-->
-                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="images/temp/case.png" class="Pimg_hover"></a></li>
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
-                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
-                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
-                <li><a href=".html"><img src="../images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="images/temp/case.png" class="Pimg_hover"></a></li>
+                <li><a href=".html"><img src="images/temp/case.png" class="Pimg_hover"></a></li>
                 <!--例 删除 结束-->
             </ul>
         </div>
@@ -176,7 +176,7 @@
 <div class="container">
 <div class="row">
 	<div class="foot_box">
-    	<div class="foot_logo"><img src="../images/temp/logo.png"></div>
+    	<div class="foot_logo"><img src="images/temp/logo.png"></div>
         <div class="foot_copy">
         	<ul>
             	<li>
@@ -195,7 +195,7 @@
 </footer>
 <!--底部版权 结束-->
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script>
 function tabShow(obj,prex,num){
 	//选项卡样式变化
