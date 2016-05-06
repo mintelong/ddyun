@@ -43,7 +43,7 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
                 <!--循环dd 7个 开始-->
-                <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
+                <dd><a href="/ddyun/index/companynewsdt">上海大度云计算公会招聘精英</a></dd>
                 
             </dl>
         </div>

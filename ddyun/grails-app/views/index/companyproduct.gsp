@@ -42,17 +42,9 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
                 <!--循环dd 7个 开始-->
-                <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
+                <dd><a href="/ddyun/index/companynewsdt">上海大度云计算公会招聘精英</a></dd>
                 <!--循环dd 7个 结束-->
-                
-                <!--例 删除 开始-->
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <!--例 删除 结束-->
+
             </dl>
         </div>
         <!--实时信息 结束-->

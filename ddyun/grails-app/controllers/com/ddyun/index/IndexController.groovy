@@ -4,6 +4,7 @@ class IndexController {
 
     def index() { }
 	
+	//企业
 	//company_culture
 	def aboutus() {}
 		
@@ -20,5 +21,16 @@ class IndexController {
 	def companyproduct() {}
 
 	def companywork() {}
+	
+	//侨联
+	def rocfculture() {}
+	
+	def rockleader() {}
+	
+	def rockrules() {}
+	
+	def rockteam() {}
+	
+	def rockword() {}
 	
 }

@@ -1,50 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
-<title></title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
-<link href="../css/css.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="Ibigbg_box" style="background:url(../images/companybg.png) no-repeat center;">
 <div class="container">
-<div class="row">
-	<!--登录注册 开始-->
-    <div class="Ilogin_box">
-    	<a href=".html">登录</a>
-        <a href=".html">注册</a>
-        <i>02131668970</i>
-	</div>
-    <!--登录注册 结束-->
-    
-    <!--导航 开始-->
-    <div class="nav_box">
-        <!--导航列表 开始-->
-        <div class="nav_list">
-        	<ul>
-            	<li><a href="index#"><p>首页</p><span>HOME</span></a></li>
-                <li><a href=".html"><p>企业时讯</p><span>INFORMATION</span></a></li>
-                <li><a href=".html"><p>智囊库</p><span>DATABASE</span></a></li>
-                <li><a href=".html"><p>中国华侨</p><span>FEDERATION</span></a></li>
-                <li><a href=".html"><p>关于我们</p><span>ABOUT US</span></a></li>
-            </ul>
-        </div>
-        <!--导航列表 结束-->
-        
-        <!--logo 开始-->
-        <div class="Logo_box"><img src="../images/temp/logo.png"></div>
-        <!--logo 结束-->
-    </div>
-    <!--导航 结束-->
-</div>
+
 </div>
 </div>
 
@@ -57,13 +26,13 @@
         <div class="RocfCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd><a href="rock_culture.html">侨联文化</a></dd>
-                <dd class="on"><a href="rock_leader.html">侨联领导</a></dd>
-                <dd><a href="rock_rules.html">侨联章程</a></dd>
-                <dd><a href="rock_team.html">侨联社团</a></dd>
-                <dd><a href="rock_word.html">建言献策</a></dd>
-                <dd><a href="rock_connect.html">联系我们</a></dd>
-                <dd><a href="rock_news.html">最新消息</a></dd>
+            	<dd><a href="/ddyun/index/rocfculture">侨联文化</a></dd>
+                <dd class="on"><a href="/ddyun/index/rockleader">侨联领导</a></dd>
+                <dd><a href="/ddyun/index/rockrules">侨联章程</a></dd>
+                <dd><a href="/ddyun/index/rockteam">侨联社团</a></dd>
+                <dd><a href="/ddyun/index/rockword">建言献策</a></dd>
+                <dd><a href="/ddyun/index/companyconnect">联系我们</a></dd>
+                <dd><a href="/ddyun/index/companynews">最新消息</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -73,17 +42,9 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
                 <!--循环dd 7个 开始-->
-                <dd><a href=".html">上海大限公会招聘精英上海大限公会招聘精英</a></dd>
+                <dd><a href="/ddyun/index/companynewsdt">上海大度云计算公会招聘精英</a></dd>
                 <!--循环dd 7个 结束-->
-                
-                <!--例 删除 开始-->
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <dd><a href=".html">上海大限公会招聘精英</a></dd>
-                <!--例 删除 结束-->
+
             </dl>
         </div>
         <!--实时信息 结束-->
@@ -210,30 +171,6 @@
 </div>
 </div>
 </div>
-
-<!--底部版权 开始-->
-<footer class="mt-50">
-<div class="container">
-<div class="row">
-	<div class="foot_box">
-    	<div class="foot_logo"><img src="../images/temp/logo.png"></div>
-        <div class="foot_copy">
-        	<ul>
-            	<li>
-                	<span>友情链接：</span>
-                    <dd><a href=".html">友情链接1</a></dd>
-                    <dd><a href=".html">友情链接2</a></dd>
-                    <dd><a href=".html">友情链接3</a></dd>
-                </li>
-                <li><span class="mr-20">地址：山东xxxxxxxxxxxxxxxxxxxxxx</span><i>4006123123</i></li>
-                <li>COPYRIGHT 2016山东极站网络科技ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-</footer>
-<!--底部版权 结束-->
 
 
 </body>

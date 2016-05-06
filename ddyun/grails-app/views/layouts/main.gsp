@@ -33,7 +33,7 @@
 		            	<li><a href="/ddyun/index"><p>首页</p><span>HOME</span></a></li>
 		                <li><a href="/ddyun/index/aboutus"><p>企业时讯</p><span>INFORMATION</span></a></li>
 		                <li><a href="http://139.196.197.45:8080/scrp/index"><p>智囊库</p><span>DATABASE</span></a></li>
-		                <li><a href="#"><p>中国华侨</p><span>FEDERATION</span></a></li>
+		                <li><a href="/ddyun/index/rocfculture"><p>中国华侨</p><span>FEDERATION</span></a></li>
 		                <li><a href="/ddyun/index/aboutus"><p>关于我们</p><span>ABOUT US</span></a></li>
 		                
 		                
