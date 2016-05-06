@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
 <title>登陆</title>
@@ -20,25 +21,7 @@
 <div class="container">
 <div class="row">
     
-    <!--导航 开始-->
-    <div class="nav_box">
-        <!--导航列表 开始-->
-        <div class="nav_list">
-        	<ul>
-            	<li><a href="index#"><p>首页</p><span>HOME</span></a></li>
-                <li><a href=".html"><p>企业时讯</p><span>INFORMATION</span></a></li>
-                <li><a href=".html"><p>智囊库</p><span>DATABASE</span></a></li>
-                <li><a href=".html"><p>中国华侨</p><span>FEDERATION</span></a></li>
-                <li><a href=".html"><p>关于我们</p><span>ABOUT US</span></a></li>
-            </ul>
-        </div>
-        <!--导航列表 结束-->
-        
-        <!--logo 开始-->
-        <div class="Logo_box"><img src="${resource(dir:'images/temp',file:'logo.png')}"></div>
-        <!--logo 结束-->
-    </div>
-    <!--导航 结束-->
+    
 </div>
 </div>
 </div>
@@ -73,28 +56,7 @@
 </div>
 </div>
 
-<!--底部版权 开始-->
-<footer class="mt-50">
-<div class="container">
-<div class="row">
-	<div class="foot_box">
-    	<div class="foot_logo"><img src="${resource(dir:'images/temp',file:'logo.png')}"></div>
-        <div class="foot_copy">
-        	<ul>
-            	<li>
-                	<span>友情链接：</span>
-                    <dd><a href=".html">友情链接1</a></dd>
-                    <dd><a href=".html">友情链接2</a></dd>
-                    <dd><a href=".html">友情链接3</a></dd>
-                </li>
-                <li><span class="mr-20">地址：山东xxxxxxxxxxxxxxxxxxxxxx</span><i>4006123123</i></li>
-                <li>COPYRIGHT 2016山东极站网络科技ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-</footer>
+
 <!--底部版权 结束-->
 </body>
 </html>

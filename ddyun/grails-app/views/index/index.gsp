@@ -83,21 +83,21 @@
 	<!--产品展示 开始-->
     <div class="Ishow_box">
     	<!--标题 开始-->
-        <div class="Ishow_title"><a href=".html"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
+        <div class="Ishow_title"><a href="/ddyun/product/productList"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
         <!--标题 结束-->
         
         <!--产品图片 开始-->
         <div class="Ishow_border">
         	<ul>
             	<!--循环li 5个 开始-->
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/product/productList"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href=".html"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/product/productList"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/product/productList"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/product/productList"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/product/productList"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
                 <!--例 删除 结束-->
             </ul>
         </div>

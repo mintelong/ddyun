@@ -30,11 +30,11 @@
 		        <!--导航列表 开始-->
 		        <div class="nav_list">
 		        	<ul>
-		            	<li><a href="index.html"><p>首页</p><span>HOME</span></a></li>
-		                <li><a href=".html"><p>企业时讯</p><span>INFORMATION</span></a></li>
-		                <li><a href=".html"><p>智囊库</p><span>DATABASE</span></a></li>
-		                <li><a href=".html"><p>中国华侨</p><span>FEDERATION</span></a></li>
-		                <li><a href=".html"><p>关于我们</p><span>ABOUT US</span></a></li>
+		            	<li><a href="/ddyun/index"><p>首页</p><span>HOME</span></a></li>
+		                <li><a href="#"><p>企业时讯</p><span>INFORMATION</span></a></li>
+		                <li><a href="#"><p>智囊库</p><span>DATABASE</span></a></li>
+		                <li><a href="#"><p>中国华侨</p><span>FEDERATION</span></a></li>
+		                <li><a href="#"><p>关于我们</p><span>ABOUT US</span></a></li>
 		                
 		                
 		                <!-- 未登录头部 -->
