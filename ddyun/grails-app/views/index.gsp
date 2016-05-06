@@ -4,7 +4,6 @@
 <meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
-<title>大度云</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

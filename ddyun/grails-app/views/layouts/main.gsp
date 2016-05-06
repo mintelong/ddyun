@@ -22,7 +22,7 @@
 		<r:layoutResources />
 		
 		<header class="navbar navbar-static-top">
-		    
+		    <title>大度云</title>
 		    <form action='/ddyun/logout' method="post" id='logout'>
 			</form>
 		    <!--导航 开始-->
@@ -32,9 +32,9 @@
 		        	<ul>
 		            	<li><a href="/ddyun/index"><p>首页</p><span>HOME</span></a></li>
 		                <li><a href="#"><p>企业时讯</p><span>INFORMATION</span></a></li>
-		                <li><a href="#"><p>智囊库</p><span>DATABASE</span></a></li>
+		                <li><a href="http://139.196.197.45:8080/scrp/index"><p>智囊库</p><span>DATABASE</span></a></li>
 		                <li><a href="#"><p>中国华侨</p><span>FEDERATION</span></a></li>
-		                <li><a href="#"><p>关于我们</p><span>ABOUT US</span></a></li>
+		                <li><a href="/ddyun/index/aboutus"><p>关于我们</p><span>ABOUT US</span></a></li>
 		                
 		                
 		                <!-- 未登录头部 -->
@@ -89,11 +89,11 @@
 		        	<ul>
 		            	<li>
 		                	<span>友情链接：</span>
-		                    <dd><a href=".html">友情链接1</a></dd>
-		                    <dd><a href=".html">友情链接2</a></dd>
-		                    <dd><a href=".html">友情链接3</a></dd>
+		                    <dd><a href="http://www.gov.cn/">中国政府网</a></dd>
+		                    <dd><a href="http://www.chinaql.org/sites/ql/index.html">中国侨联</a></dd>
+		                    <dd><a href="http://www.shanghaiql.org/">上海侨联</a></dd>
 		                </li>
-		                <li><span class="mr-20">地址：上海长宁区</span><i>4006123123</i></li>
+		                <li><span class="mr-20">地址：上海静安区石门二路</span><i>4006123123</i></li>
 		                <li>COPYRIGHT 2016上海大度云ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
 		            </ul>
 		        </div>

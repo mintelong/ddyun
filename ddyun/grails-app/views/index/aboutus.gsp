@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
-<title></title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
-<link href="../css/css.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="Ibigbg_box" style="background:url(../img/companybg.png) no-repeat center;">
+<div class="Ibigbg_box" style="background:url(../images/companybg.png) no-repeat center;">
 <div class="container">
-<div class="row">
-	<!--登录注册 开始-->
-    <div class="Ilogin_box">
-    	<a href=".html">登录</a>
-        <a href=".html">注册</a>
-	</div>
-    <!--登录注册 结束-->
-    
-    <!--导航 开始-->
-    <div class="nav_box">
-        <!--导航列表 开始-->
-        <div class="nav_list">
-        	<ul>
-            	<li><a href="index#"><p>首页</p><span>HOME</span></a></li>
-                <li><a href=".html"><p>企业时讯</p><span>INFORMATION</span></a></li>
-                <li><a href=".html"><p>智囊库</p><span>DATABASE</span></a></li>
-                <li><a href=".html"><p>中国华侨</p><span>FEDERATION</span></a></li>
-                <li><a href=".html"><p>关于我们</p><span>ABOUT US</span></a></li>
-            </ul>
-        </div>
-        <!--导航列表 结束-->
-        
-        <!--logo 开始-->
-        <div class="Logo_box"></div>
-        <!--logo 结束-->
-    </div>
-    <!--导航 结束-->
-</div>
+
 </div>
 </div>
 
@@ -121,26 +91,5 @@
 </div>
 </div>
 
-<!--底部版权 开始-->
-<footer class="mt-50">
-<div class="container">
-<div class="row">
-	<div class="foot_box">
-    	<div class="foot_logo"></div>
-        <div class="foot_copy">
-        	<ul>
-            	<li>
-                	<span>友情链接：</span>
-                    <dd><a href=".html"></a></dd>
-                </li>
-                <li><span class="mr-20">地址：上海市静安区石门二路333弄3号10E</span><i>62108872</i></li>
-                <li>COPYRIGHT 2016大度云计算ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-</footer>
-<!--底部版权 结束-->
 </body>
 </html>
