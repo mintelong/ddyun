@@ -2,7 +2,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height:150%; width:100%; font-size:14px;margin:0;padding:0;font-family:"微软雅黑","Helvetica",STHeiTi,sans-serif!important;background:#396dd1;}
+body {line-height:150%; width:100%; font-size:14px;margin:0;padding:0;font-family:"寰蒋闆呴粦","Helvetica",STHeiTi,sans-serif!important;background:#396dd1;}
 body{}
 html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-user-select:none}
 a{text-decoration:none!important;color:#000}
@@ -28,26 +28,26 @@ button[disabled], html input[disabled]{background-color:#DDD;}
 .Hintsauto{height:auto!important;min-height:auto!important; overflow:none!important;}
 .Hidden{overflow:hidden;}
 .line-block{display:inline-block}
-.lazyload img{background: url(../img/loading.gif) 50% no-repeat;}
+.lazyload img{background: url(../images/loading.gif) 50% no-repeat;}
 
 /**/
 .main{width:1200px;margin:0 auto;}
 
-/*背景颜色*/
+/*鑳屾櫙棰滆壊*/
 .nobg{background:none!important;}
 .bgff{background:#fff;}
 .bg00{background:#000;}
 .bgcc{background:#ccc;}
 .bg_f3{background:#f3f3f3;}
 
-/*文字颜色*/
+/*鏂囧瓧棰滆壊*/
 .color_ff{color:#fff!important;}
 .color_cc{color:#ccc!important;}
 .color_33{color:#333!important;}
 .color_66{color:#666!important;}
 .color_99{color:#999!important;}
 
-/*字体大小*/
+/*瀛椾綋澶у皬*/
 .font12{font-size:12px!important;}
 .font14{font-size:14px!important;}
 .font16{font-size:16px!important;}
@@ -58,24 +58,24 @@ button[disabled], html input[disabled]{background-color:#DDD;}
 .font26{font-size:26px!important;}
 .font28{font-size:28px!important;}
 
-/*旋转*/
+/*鏃嬭浆*/
 .rotate45{transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
 .rotate90{transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);-webkit-transform:rotate(90deg);}
 .rotate_45{transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
 .rotate_90{transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);}
 
-/*鼠标经过变大的样式*/
+/*榧犳爣缁忚繃鍙樺ぇ鐨勬牱寮�/
 .Pimg_hover{transition:1s;}
 .Pimg_hover:hover{transform: scale(1.1, 1.1);transition: 1s transform;}
 
 /**/
 .input-text,.textarea,.Winput{box-sizing:border-box;padding-left:5px;border:solid 1px #ddd;-webkit-transition:all 0.2s linear 0s; -moz-transition:all 0.2s linear 0s; -o-transition:all 0.2s linear 0s;  transition:all 0.2s linear 0s}
 .input-text:hover,.textarea:hover{border: solid 1px #3bb4f2}
-/*得到焦点后*/
+/*寰楀埌鐒︾偣鍚�/
 .input-text.focus,textarea.focus{border:solid 1px #0f9ae0 \9;border-color:rgba(82,168,236,0.8);box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6)}
-/*不可点击*/
+/*涓嶅彲鐐瑰嚮*/
 .input-text.disabled,.textarea.disabled,.input-text.disabled.focus,.textarea.disabled.focus{background-color:#ededed; cursor:default;border-color: #ddd;-webkit-box-shadow:inset 0 2px 2px #e8e7e7; -moz-box-shadow:inset 0 2px 2px #e8e7e7;  box-shadow:inset 0 2px 2px #e8e7e7}
-/*只读状态*/
+/*鍙鐘舵�*/
 .input-text.disabled,.textarea.disabled{background-color:#e6e6e6; cursor:default}
 input[type="text"],select,textarea{outline:none!important; border-radius:0;-webkit-appearance:none; -moz-appearance: none;} 
 input{outline:none!important; border-radius:0;} 
@@ -84,10 +84,10 @@ input,button{overflow: visible;vertical-align:middle;outline:none}
 input[type="submit"],input[type="reset"],input[type="button"],input[type="text"],input[type="password"]{-webkit-appearance:none;outline:none}
 body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue","Helvetica,tahoma,arial","WenQuanYi Micro Hei","Verdana,sans-serif","\5B8B\4F53";color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
 
-/*文字对齐方向*/
+/*鏂囧瓧瀵归綈鏂瑰悜*/
 .center{text-align:center}.text-l{text-align:left}.text-r{text-align:right}
 
-/*边框样式*/
+/*杈规鏍峰紡*/
 .noborder{border:none!important;}
 .noborL{border-left:none!important;}
 .noborR{border-right:none!important;}
@@ -95,18 +95,18 @@ body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino 
 .noborB{border-bottom:none!important;}
 .bor_e6{border:1px solid #e6e6e6;}
 
-/*边框圆角*/
+/*杈规鍦嗚*/
 .radius3{border-radius:3px!important;}
 .radius4{border-radius:4px!important;}
 
-/*边框阴影*/
+/*杈规闃村奖*/
 .box_Wshadow1{box-shadow:0 0 15px 1px #f2f2f2;}
-/*鼠标经过边框阴影*/
+/*榧犳爣缁忚繃杈规闃村奖*/
 .box_Hshadow1:hover{box-shadow:0 0 15px 1px #f2f2f2;}
 /**/
 .Validform_error{background-color:#fbe2e2!important; border-color:#c66161!important; color:#c00!important}
 #Validform_msg{display:none}
-/*文字单行溢出省略号*/
+/*鏂囧瓧鍗曡婧㈠嚭鐪佺暐鍙�/
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /*margin*/
@@ -129,7 +129,7 @@ body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino 
 /*width*/
 .W50{width:50px;}.W55{width:55px!important;}.W80{width:80px!important;}.W90{width:90px;}.W110{width:110px;}.W120{width:120px!important;}.W160{width:160px!important;}.W200{width:200px!important;}.W240{width:240px;}.W280{width:280px;}.W300{width:300px!important;}.W900{width:900px!important;}
 
-/*百分比宽度*/
+/*鐧惧垎姣斿搴�/
 .WW10{width:10%!important;}.WW20{width:20%!important;}.WW25{width:25%!important;}.WW30{width:30%!important;}.WW40{width:40%!important;}.WW50{width:50%!important;}.WW60{width:60%!important;}.WW70{width:70%!important;}.WW80{width:80%!important;}.WW90{width:90%!important;}.WW100{width:100%!important;}
 
 /*height*/
@@ -147,62 +147,62 @@ body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino 
 .H120{height:120px;line-height:120px!important;}
 .HH100{height:100%!important;}
 
-/*按钮*/
+/*鎸夐挳*/
 .btn,.btn2{display:inline-block;box-sizing:border-box;cursor:pointer;text-align:center;font-weight:400;white-space:nowrap;vertical-align: middle;-moz-padding-start:npx; -moz-padding-end:npx;border:solid 1px #ddd; background-color:#fff; width:auto;*zoom:1;*overflow:visible;-webkit-transition:background-color .1s linear;	-moz-transition:background-color .1s linear;	-o-transition:background-color .1s linear;	transition:background-color .1s linear}
 a.btn:hover,a.btn:focus,a.btn:active,a.btn.active,a.btn.disabled,a.btn,a.btn2:hover,a.btn2:focus,a.btn2:active,a.btn2.active,a.btn2.disabled,a.btn2[disabled]{text-decoration:none}
 .btn:active,.btn.active,.btn2:active,.btn2.active{background-color:#ccc}
 .btn:first-child,.btn2:first-child{*margin-left:0}
 .btn.active,.btn:active,.btn2.active,.btn2:active{-moz-box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset;-webkit-box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset; box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset}
-/*默认——灰色	通常用于取消*/
+/*榛樿鈥斺�鐏拌壊	閫氬父鐢ㄤ簬鍙栨秷*/
 .btn-default{background-color:#e6e6e6;border-color:#e6e6e6}
 .btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active{color:#333;background-color:#c7c7c7;border-color:#c7c7c7}
-/*主要——主色	通常用于确定、提交、购买、支付等*/
+/*涓昏鈥斺�涓昏壊	閫氬父鐢ㄤ簬纭畾銆佹彁浜ゃ�璐拱銆佹敮浠樼瓑*/
 .btn-primary{color:#fff;background-color:#5a98de; border-color:#5a98de}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active{color:#fff;background-color:#0a6999;border-color:#0a6999}
-/*次要按钮*/
+/*娆¤鎸夐挳*/
 .btn-secondary{color:#fff;background-color:#3bb4f2; border-color:#3bb4f2}
 .btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active,.btn-secondary.active{color:#fff;background-color:#0f9ae0;border-color:#0f9ae0}
-/*成功*/
+/*鎴愬姛*/
 .btn-success{color:#fff;background-color:#5eb95e; border-color:#5eb95e}.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active{color:#fff;background-color:#429842;border-color:#429842}
-/*警告*/
+/*璀﹀憡*/
 .btn-warning{color:#fff;background-color:#ff9e00; border-color:#ff9e00}
 .btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active{color:#fff;background-color:#F37B1D;border-color:#F37B1D;outline:none}
-/*危险*/
+/*鍗遍櫓*/
 .btn-danger{color:#fff;background-color:#dd514c; border-color:#dd514c}.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active{color:#fff;background-color:#c62b26;border-color:#c62b26}
 
-/*边框样式*/
+/*杈规鏍峰紡*/
 .noborder{border:none!important;}
 .noborL{border-left:none!important;}
 .noborR{border-right:none!important;}
 .noborT{border-top:none!important;}
 .noborB{border-bottom:none!important;}
 .bor_d9{border:1px solid #d9d9d9;}
-.bor_d7{border:1px solid #F7F7F7}/*很淡的灰色边框*/
+.bor_d7{border:1px solid #F7F7F7}/*寰堟贰鐨勭伆鑹茶竟妗�/
 .bor_e3{border:1px solid #e3e3e3;}
 .borB_e3{border-bottom:1px solid #e3e3e3;}
 .borR_dae3{border-right:1px dashed #e3e3e3;}
 .borB_dae3{border-bottom:1px dashed #e3e3e3;}
 
-/*图标通用*/
-.qicont{background:url(../img/qicont.png) no-repeat;}
+/*鍥炬爣閫氱敤*/
+.qicont{background:url(../images/qicont.png) no-repeat;}
 
-/*标题文字下面线*/
+/*鏍囬鏂囧瓧涓嬮潰绾�/
 .line{font-size: 0px; line-height: 0px; border-top: solid 1px #eee; float: none}
-.line2{height:45px; line-height:45px; font-size:1.2em; border-bottom:1px solid #eaeaea; position:relative;padding:0 10px;}/*文字下面有亮线*/
+.line2{height:45px; line-height:45px; font-size:1.2em; border-bottom:1px solid #eaeaea; position:relative;padding:0 10px;}/*鏂囧瓧涓嬮潰鏈変寒绾�/
 .line2 span{height:45px; line-height:45px; padding:0 28px 0 10px; border-bottom:2px solid #0099ff; position:absolute;bottom:-2px;left:0;letter-spacing:2px;word-spacing:8px;font-weight:600;color:#333333;}
 .line3{height:40px; line-height:40px; font-size:20px; border-bottom:1px solid #DFDFDF; position:relative;}
 .line3 span{height:40px; line-height:40px; padding:0 8px 0 12px; border-bottom:2px solid #2a8631; position:absolute;bottom:-2px;left:0;}
 .line3 font{color:#999999;margin-left:5px;font-size:16px;}
-.line4{height:40px; line-height:40px; font-size:16px; border-bottom:2px solid #DFDFDF; position:relative;}/*文字下面有亮线*/
+.line4{height:40px; line-height:40px; font-size:16px; border-bottom:2px solid #DFDFDF; position:relative;}/*鏂囧瓧涓嬮潰鏈変寒绾�/
 .line4 span{height:40px; line-height:40px; padding:0 30px 0 12px; border-bottom:2px solid #ff9c01; position:absolute;bottom:-2px;left:0;}
 
-/*必填*/
+/*蹇呭～*/
 .Required{font-size:1em;color:red;}
 
-/*发送验证码*/
+/*鍙戦�楠岃瘉鐮�/
 .Rebtn{background:#0099ff;color:#fff;border:1px solid #0099ff;display:inline-block;width:39%;margin-left:1%;cursor:pointer;}
 
-/*底部版权*/
+/*搴曢儴鐗堟潈*/
 footer{width:100%;height:100px;border-top:3px solid #264e96;}
 .foot_box{padding:20px 0;}
 .foot_logo{height:60px;width:20%;overflow:hidden;float:left;position:relative;}

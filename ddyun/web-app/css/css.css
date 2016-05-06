@@ -1,10 +1,10 @@
-/*首页 登录注册*/
+/*棣栭〉 鐧诲綍娉ㄥ唽*/
 .Ibigbg_box{width:100%;height:545px;text-align:right;}
 .Ilogin_box{width:100%;height:28px;line-height:28px;color:#fff;margin-top:5px;}
 .Ilogin_box a{color:#fff;margin:0 5px;}
 .Ilogin_box i{color:#ffb900;}
 .Ilogin_box a:hover{color:orange}
-/*首页 导航*/
+/*棣栭〉 瀵艰埅*/
 .nav_box{width:100%;height:45px;background:-webkit-gradient(linear,0% 0%,100% 100%,color-stop(0,rgba(0,0,0,0)),color-stop(0.1,rgba(0,0,0,.3)), color-stop(0.9,rgba(0,0,0,.3)),color-stop(1,rgba(0,0,0,0)));background:-moz-linear-gradient(0 0 90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 10%,rgba(0,0,0,.3) 90%,rgba(0,0,0) 100%);background:-moz-linear-gradient(left center right,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.1),);padding:6px 15px;}
 .Logo_box{height:100%;float:left;}
 .Logo_box img{height:100%;max-width:100%;}
@@ -14,7 +14,7 @@
 .nav_list ul li p{font-size:16px;line-height:16px;}
 .nav_list ul li span{font-size:12px;line-height:14px;opacity:.6}
 .nav_list ul li a:hover{color:orange;}
-/*首页 实时状况*/
+/*棣栭〉 瀹炴椂鐘跺喌*/
 .Ireal_box{width:414px;height:200px;background:rgba(255,255,255,.3);border-radius:5px;position:absolute;top:210px;right:0px;padding:10px;}
 .Ireal_border{width:100%;height:100%;border-radius:5px;border:1px solid #6B8ABF;}
 .Ireal_title{margin:3px 2px;}
@@ -29,7 +29,7 @@
 .Ireal_cont .Ireal_text ul li p i{width:5px;height:5px;border-radius:100%;background:#e49a12;display:inline-block;vertical-align:middle;margin-right:5px;}
 .Ireal_cont .Ireal_text ul li span{position:absolute;top:0;right:10px;line-height:22px;font-size:12px;}
 .Ireal_cont .Ireal_text ul li a:hover{color:#0099ff;}
-/*首页 圆圈导航*/
+/*棣栭〉 鍦嗗湀瀵艰埅*/
 .Iround_box{width:478px;height:90px;position:absolute;right:0;top:435px;overflow:hidden;}
 .Iround_box ul li{width:20%;float:left;text-align:center;}
 .Iround_box ul li a{color:#fff;}
@@ -45,7 +45,7 @@
 .Iround_box ul li:nth-child(3) a:hover i{background-position:-383px -90px;transition:all .6s;}
 .Iround_box ul li:nth-child(4) a:hover i{background-position:-500px -90px;transition:all .6s;}
 .Iround_box ul li:nth-child(5) a:hover i{background-position:-616px -90px;transition:all .6s;}
-/*首页 产品展示*/
+/*棣栭〉 浜у搧灞曠ず*/
 .Ishow_box{width:60%;height:255px;float:left;padding-right:20px;}
 .Ishow_title{padding:0 15px 5px 0;}
 .Ishow_title h3{color:#629dc6;font-size:16px;}
@@ -53,16 +53,16 @@
 .Ishow_title span{font-size:0.8em;float:right;}
 .Ishow_title span i{width:0;height:0;display:inline-block;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #e49a12;margin-left:5px;}
 .Ishow_title a:hover{color:#ccc;}
-.Ishow_border{width:100%;height:232px;background:url(../img/border.png) center no-repeat;background-size:100% 100%;padding:17px 11px;}
+.Ishow_border{width:100%;height:232px;background:url(../images/border.png) center no-repeat;background-size:100% 100%;padding:17px 11px;}
 .Ishow_border ul li{width:25%;height:96px;padding-right:5px;overflow:hidden;float:left;margin-bottom:5px;}
 .Ishow_border ul li:first-child{width:50%;height:197px;margin-bottom:0;}
 .Ishow_border ul li img{width:100%;min-height:100%;}
-/*首页 新闻*/
+/*棣栭〉 鏂伴椈*/
 .Inews_box{float:right;width:40%;height:240px;padding-top:5px;}
 .Inews_tab{overflow:hidden;text-align:center;}
 .Inews_tab ul li{width:62px;height:23px;line-height:23px;text-align:center;float:left;font-size:12px;color:#fff;cursor:pointer;padding-right:5px;}
 .Inews_tab ul li span{display:block;}
-.Inews_tab ul li.on{background:url(../img/qicont.png) no-repeat;background-position:0 -105px;}
+.Inews_tab ul li.on{background:url(../images/qicont.png) no-repeat;background-position:0 -105px;}
 .Inews_tab a{color:#fff;}
 .Inews_tab span{font-size:0.8em;float:right;}
 .Inews_tab span i{width:0;height:0;display:inline-block;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #e49a12;margin-left:5px;}
@@ -74,7 +74,7 @@
 .Inews_list ul li a:hover{color:#0099ff;}
 
 
-/*企业文化 企业文化列表*/
+/*浼佷笟鏂囧寲 浼佷笟鏂囧寲鍒楄〃*/
 .CopCul_box{margin-top:-200px;}
 .CopCul_list{width:100%;height:280px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
 .CopCul_list dl dt{width:100%;height:56px;line-height:56px;padding:15px 0 15px 24px;border-bottom:1px solid #81A1DE;}
@@ -83,7 +83,7 @@
 .CopCul_list dl dd a{color:#fff;display:block;}
 .CopCul_list dl dd:hover{background:#1d5579;}
 .CopCul_list dl dd.on{background:#1d5579;}
-/*企业文化 实时信息*/
+/*浼佷笟鏂囧寲 瀹炴椂淇℃伅*/
 .CopCul_info{width:100%;height:240px;background:rgba(255,255,255,.3);margin-top:10px;}
 .CopCul_info dl dt{width:100%;height:30px;border-bottom:1px solid #81A1DE;padding:5px 0 5px 10px;margin-bottom:10px;}
 .CopCul_info dl dt i{width:142px;height:20px;display:block;background-position:-735px -50px;}
@@ -91,11 +91,11 @@
 .CopCul_info dl dd a{color:#fff;}
 .CopCul_info dl dd:hover{color:orange;}
 .CopCul_info dl dd:hover a{color:orange;}
-/*企业文化 留言板*/
-.CopCul_liuyan{width:100%;height:45px;line-height:45px;margin-top:10px;background:url(../img/companybook.png) bottom left no-repeat #173f60;text-align:center;}
+/*浼佷笟鏂囧寲 鐣欒█鏉�/
+.CopCul_liuyan{width:100%;height:45px;line-height:45px;margin-top:10px;background:url(../images/companybook.png) bottom left no-repeat #173f60;text-align:center;}
 .CopCul_liuyan a{color:#fff;font-size:16px;display:block;}
-.CopCul_liuyan:hover{background:url(../img/companybook.png) bottom left no-repeat #143754;}
-/*企业文化 导航*/
+.CopCul_liuyan:hover{background:url(../images/companybook.png) bottom left no-repeat #143754;}
+/*浼佷笟鏂囧寲 瀵艰埅*/
 .CopCul_nav{padding:30px 0;overflow:hidden;}
 .CopCul_nav ul li{width:33.33333%;float:left;text-align:center;}
 .CopCul_nav ul li i{width:51px;height:51px;display:inline-block;transition:all .6s;}
@@ -107,7 +107,7 @@
 .CopCul_nav ul li:nth-child(1) a:hover i{background-position:0 -269px;}
 .CopCul_nav ul li:nth-child(2) a:hover i{background-position:-118px -269px;}
 .CopCul_nav ul li:nth-child(3) a:hover i{background-position:-245px -269px;}
-/*企业文化 内容*/
+/*浼佷笟鏂囧寲 鍐呭*/
 .CopCul_cont{width:100%;padding:30px 20px;background:#fff;border-radius:5px;}
 .CopCul_title{width:100%;border-bottom:1px solid #d3d3d3;padding:5px;}
 .CopCul_title h3{font-size:16px;line-height:29px;border-left:7px solid #4f85d2;padding:5px 0 0 10px;}
@@ -116,7 +116,7 @@
 .CopCul_details{width:100%;height:100%;margin-top:20px;text-align:center;}
 .CopCul_details img{max-width:100%;max-height:100%;display:inline-block;}
 
-/*分页*/
+/*鍒嗛〉*/
 .Elite_page{text-align:center;margin-top:40px;}
 .Elite_line{width:100%;border-bottom:1px solid #f3f3f3;}
 .Elite_page ul{padding:10px;text-align:center;display:inline-block;background:#fff;transform:translateY(-28px);-moz-transform:translateY(-28px);-ms-transform:translateY(-28px);-o-transform:translateY(-28px);-webkit-transform:translateY(-28px);}
@@ -127,7 +127,7 @@
 .Elite_page ul li:first-child{width:65px;}
 .Elite_page ul li:last-child{width:65px;}
 
-/*企业精英*/
+/*浼佷笟绮捐嫳*/
 .Elite_box{overflow:hidden;margin-top:20px;}
 .Elite_box ul li{float:left;width:25%;padding:8px;}
 .Elite_cont{width:100%;height:250px;box-shadow:0 0 5px 0 #EFEFEF;padding:5px;position:relative;}
@@ -139,10 +139,10 @@
 .Elite_cont .Elite_info{padding:0 5px;}
 .Elite_cont .Elite_info p{font-size:12px;height:34px;overflow:hidden;line-height:16px;color:#4d4d4d;}
 .Elite_cont .Elite_info p:last-child{color:#ccc;}
-.Elite_cont .Elite_hover{width:100%;height:100%;background:rgba(86,144,218,.75) url(../img/elite.png) center no-repeat;position:absolute;top:0;left:0;transition:all .6s;display:none;}
+.Elite_cont .Elite_hover{width:100%;height:100%;background:rgba(86,144,218,.75) url(../images/elite.png) center no-repeat;position:absolute;top:0;left:0;transition:all .6s;display:none;}
 .Elite_cont:hover .Elite_hover{display:block;transition:all .6s;}
 
-/*企业产品*/
+/*浼佷笟浜у搧*/
 .ComPro_box{overflow:hidden;margin-top:20px;}
 .ComPro_box ul li{width:33.333%;float:left;padding:10px 15px;}
 .ComPro_cont{width:100%;height:170px;}
@@ -153,13 +153,13 @@
 .ComPro_cont .ComPro_title a{height:20px;line-height:20px;font-size:12px;color:#fff;background:#ec6941;display:block;float:right;padding:0 8px;border-radius:3px;}
 .ComPro_cont .ComPro_title a:hover{background:#d9613d;}
 
-/*合作案例*/
+/*鍚堜綔妗堜緥*/
 .ComCase_box{overflow:hidden;margin-top:20px;}
 .ComCase_box ul li{width:25%;float:left;padding:5px;}
 .ComCase_cont{width:100%;height:110px;overflow:hidden;position:relative;}
 .ComCase_cont img{width:100%;min-height:100%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
 
-/*业务范围*/
+/*涓氬姟鑼冨洿*/
 .CopWork_box{width:100%;height:100%;margin-top:20px;text-align:center;}
 .CopWork_box img{max-width:100%;max-height:100%;display:inline-block;}
 .CopWork_back{text-align:center;margin-top:60px;}
@@ -168,13 +168,13 @@
 .CopWork_back .CopWork_btn a{width:282px;height:46px;border:1px solid #ececec;text-align:center;line-height:46px;display:inline-block;color:#4d4d4d;}
 .CopWork_back .CopWork_btn a:hover{background:#f8f8f8;}
 
-/*联系我们*/
+/*鑱旂郴鎴戜滑*/
 .CopCnect_box{overflow:hidden;margin-top:20px;padding:0 30px;}
 .CopCnect_box label{font-size:1em;font-weight:600;margin:20px 0;}
 .CopCnect_box p{color:#4d4d4d;}
 .CopCnect_box img{max-width:100%;max-height:100%;display:block;margin:10px auto;}
 
-/*最新消息*/
+/*鏈�柊娑堟伅*/
 .CopInfo_box{margin-top:20px;}
 .CopInfo_box ul li{padding:10px;width:100%;border-bottom:1px dashed #cdcdcd;overflow:hidden;}
 .CopInfo_cont{}
@@ -182,7 +182,7 @@
 .CopInfo_cont p{color:#4d4d4d;margin-top:10px;height:42px;overflow:hidden;}
 .CopInfo_cont span{float:right;color:#ccc;}
 
-/*侨联文化 侨联文化列表*/
+/*渚ㄨ仈鏂囧寲 渚ㄨ仈鏂囧寲鍒楄〃*/
 .RocfCul_box{margin-top:-200px;}
 .RocfCul_list{width:100%;height:280px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
 .RocfCul_list dl dt{width:100%;height:56px;line-height:56px;padding:15px 0 15px 24px;border-bottom:1px solid #81A1DE;}
@@ -192,12 +192,12 @@
 .RocfCul_list dl dd:hover{background:#1d5579;}
 .RocfCul_list dl dd.on{background:#1d5579;}
 
-/*侨联文化*/
+/*渚ㄨ仈鏂囧寲*/
 .RockCul_box{overflow:hidden;margin-top:20px;padding:20px 20px 10px;position:relative;}
 .RockCul_box font{float:right;color:#ccc;clear:both;position:absolute;top:0;right:20px;}
 .RockCul_box img{max-width:100%;max-height:100%;display:block;margin:10px auto;}
 
-/*最新消息详情*/
+/*鏈�柊娑堟伅璇︽儏*/
 .ComDat_box{overflow:hidden;margin-top:20px;}
 .ComDat_make{overflow:hidden;}
 .ComDat_make a{width:82px;height:21px;line-height:21px;text-align:center;display:inline-block;background:#173f60;color:#fff;font-size:12px;border-radius:3px;float:right;margin-right:10px;}
@@ -209,7 +209,7 @@
 .ComDat_form ul li{width:60%;display:block;margin:10px auto;overflow:hidden;}
 .ComDat_form ul li span{float:left;width:30%;text-align:right;line-height:30px;}
 
-/*企业导航*/
+/*浼佷笟瀵艰埅*/
 .Coplaw_box{margin-top:-200px;}
 .Coplaw_list{width:100%;height:280px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
 .Coplaw_list dl dt{width:100%;height:56px;line-height:56px;padding:15px 0 15px 24px;border-bottom:1px solid #81A1DE;}
@@ -220,7 +220,7 @@
 .Coplaw_list dl dd:hover{background:#1d5579;}
 .Coplaw_list dl dd.on{background:#1d5579;}
 
-/*企业导航内容*/
+/*浼佷笟瀵艰埅鍐呭*/
 .Coplaw_top{border-bottom:1px solid #d3d3d3;overflow:hidden;padding:10px 0;}
 .Coplaw_tab{float:right;}
 .Coplaw_tab ul li{float:left;padding:0 20px;cursor:pointer;}
@@ -231,13 +231,13 @@
 .Coplaw_Linfo ul li i{width:8px;height:8px;background:#2a6ea8;display:inline-block;border-radius:100%;margin-right:5px;}
 .Coplaw_Linfo ul li p{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-bottom:1px solid #eeeeee;padding:10px 0;}
 
-/*产品分类导航栏*/
+/*浜у搧鍒嗙被瀵艰埅鏍�/
 .ProNav_box{overflow:hidden;margin-top:20px;}
 .ProNav_box ul li{width:25%;float:left;padding:20px 10px 20px;border-bottom:1px dashed #d3d3d3}
 .ProNav_cont{width:100%;height:110px;overflow:hidden;position:relative;}
 .ProNav_cont img{width:100%;min-height:100%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
 
-/*产品分类导航栏 右边*/
+/*浜у搧鍒嗙被瀵艰埅鏍�鍙宠竟*/
 .ProNavT_issue{padding:20px 0 50px;width:100%;background:rgba(255,255,255,.3);border-radius:8px;}
 .ProNavT_btn{text-align:center;}
 .ProNavT_btn a{width:80%;height:45px;line-height:45px;text-align:center;padding:0;font-size:16px;}
@@ -248,25 +248,25 @@
 .ProNavT_common .ProNavT_info ul li{margin-bottom:10px;}
 .ProNavT_common .ProNavT_info ul li h3{font-weight:600;color:#97dbff;border-bottom:1px dashed #97dbff;padding-bottom:5px;margin-bottom:10px;}
 .ProNavT_common .ProNavT_info ul li p{font-size:12px;color:#fff;text-indent:2em;}
-/*产品分类导航栏 左边*/
+/*浜у搧鍒嗙被瀵艰埅鏍�宸﹁竟*/
 .ProNavT_box{overflow:hidden;margin-top:20px;}
 .ProNavT_box ul li{width:33.333%;float:left;padding:20px 10px 20px;border-bottom:1px dashed #d3d3d3}
 .ProNavT_cont{width:100%;height:110px;overflow:hidden;position:relative;}
 .ProNavT_cont img{width:100%;min-height:100%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
 
-/*列表*/
+/*鍒楄〃*/
 .ComCart_box{margin-top:20px;}
 .ComCart_box .table tbody tr td{border-top:none;border-bottom:1px solid #f2f2f2;text-align:center;}
 .ComCart_box .table tfoot tr td{text-align:right;}
 .ComCart_box .table tfoot tr td i{font-size:18px;color:red;}
 .ComCart_img{width:90px;height:60px;overflow:hidden;}
 .ComCart_img img{width:100%;min-height:100%;}
-/*在线支付*/
+/*鍦ㄧ嚎鏀粯*/
 .ComCart_pay{}
 .ComCart_pay ul{margin-top:20px;}
 .ComCart_pay ul li{padding:10px;width:100%;overflow:hidden;}
 .ComCart_pay ul li input{width:20px;height:20px;float:left;margin-top:10px;margin-right:10px;}
-/*订购人信息*/
+/*璁㈣喘浜轰俊鎭�/
 .ComCart_info{}
 .ComCart_info ul{margin-top:20px;}
 .ComCart_info ul li{overflow:hidden;width:100%;padding:10px;text-align:center;}

@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
-<title></title>
+<title>大度云</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'css.css')}" type="text/css">
-
 </head>
 
 <body>
 <div class="Ibigbg_box" style="background:url(${resource(dir:'images',file:'Ibg.png')}) center top no-repeat;">
 <div class="container relative">
-<div class="row">
-	<!--登录注册 开始-->
-    <div class="Ilogin_box">
-    	<a href=".html">登录</a>
-        <a href=".html">注册</a>
-        <i>02131668970</i>
-	</div>
-    <!--登录注册 结束-->
-    
-    <!--导航 开始-->
-    <div class="nav_box">
-        <!--导航列表 开始-->
-        <div class="nav_list">
-        	<ul>
-            	<li><a href="index.html"><p>首页</p><span>HOME</span></a></li>
-                <li><a href=".html"><p>企业时讯</p><span>INFORMATION</span></a></li>
-                <li><a href=".html"><p>智囊库</p><span>DATABASE</span></a></li>
-                <li><a href=".html"><p>中国华侨</p><span>FEDERATION</span></a></li>
-                <li><a href=".html"><p>关于我们</p><span>ABOUT US</span></a></li>
-            </ul>
-        </div>
-        <!--导航列表 结束-->
-        
-        <!--logo 开始-->
-        <div class="Logo_box"><img src="${resource(dir:'images/temp',file:'logo.png')}"/></div>
-        <!--logo 结束-->
-    </div>
-    <!--导航 结束-->
+
+
+
+
+
     
     <!--实时状况 开始-->
     <div class="Ireal_box">
@@ -94,6 +68,13 @@
     </div>
     <!--圆圈导航 结束-->
 </div>
+
+
+
+
+
+
+
 </div>
 </div>
 
@@ -172,29 +153,6 @@
 </div>
 </div>
 
-<!--底部版权 开始-->
-<footer class="mt-50">
-<div class="container">
-<div class="row">
-	<div class="foot_box">
-    	<div class="foot_logo"><img src="${resource(dir:'images/temp',file:'logo.png')}"/></div>
-        <div class="foot_copy">
-        	<ul>
-            	<li>
-                	<span>友情链接：</span>
-                    <dd><a href=".html">友情链接1</a></dd>
-                    <dd><a href=".html">友情链接2</a></dd>
-                    <dd><a href=".html">友情链接3</a></dd>
-                </li>
-                <li><span class="mr-20">地址：上海xxxxxxxxxxxxxxxxxxxxxx</span><i>4006123123</i></li>
-                <li>COPYRIGHT 2016上海大度云ALL RIGHT RESERVED. ALL RIGHT RESERVED. ALL RIGHT RESERVED.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-</footer>
-<!--底部版权 结束-->
 
 <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.min.js')}" ></script>
 <script>
