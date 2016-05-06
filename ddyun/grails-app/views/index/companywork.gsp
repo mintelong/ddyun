@@ -26,11 +26,11 @@
         <div class="CopCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd class="on"><a href="/ddyun/index/aboutus">企业文化</a></dd>
+            	<dd><a href="/ddyun/index/aboutus">企业文化</a></dd>
                 <dd><a href="/ddyun/index/companyelite">企业精英</a></dd>
                 <dd><a href="/ddyun/index/companyproduct">企业产品</a></dd>
                 <dd><a href="/ddyun/index/companycase">合作案例</a></dd>
-                <dd><a href="/ddyun/index/companywork">业务范围</a></dd>
+                <dd class="on"><a href="/ddyun/index/companywork">业务范围</a></dd>
                 <dd><a href="/ddyun/index/companyconnect">联系我们</a></dd>
                 <dd><a href="/ddyun/index/companynews">最新消息</a></dd>
             </dl>
@@ -41,8 +41,17 @@
         <div class="CopCul_info">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <!--例 删除 开始-->
+                <!--循环dd 7个 开始-->
                 <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
+                <!--循环dd 7个 结束-->
+                
+                <!--例 删除 开始-->
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
                 <!--例 删除 结束-->
             </dl>
         </div>
@@ -72,18 +81,22 @@
         	<!--标题 开始-->
             <div class="CopCul_title">
                 <a href="index.html">返回首页</a>
-                <h3>企业文化</h3>
+                <h3>业务范围</h3>
             </div>
             <!--标题 结束-->
             
             <!--详情 开始-->
-            <div class="CopCnect_box">
-            	<label>齐云大度  共创辉煌</label>
-                <p>		传统多媒体信息量是有局限的，在一个特定的时间、空间内传统多媒体信息量是有限的。但是，云计算--云多媒体智能系统在一个特定的时间、空间内，可以容纳无限大的信息量。可以说信息量越大，云多媒体的作用越大。可以说云多媒体智能系统就是一个图片和影像资料的搜索引擎，传统搜索引擎在处理无限量图片和影像资料时，只能单一和有限数量的处理材料。但是，云多媒体智能系统，可以在一个画面上高度密集地展现图片和影像画面，并且以相关内容形成，无限展示。这种无限相关搜索功能，可以广泛应用在政治、经济、科教文卫体各个领域。
-                大度云计算科技在此基础上开发的云多媒体高科技产品，得到了上海市有关领导及海内外的高度重视和关注。</p>         
+            <div class="CopWork_box">
+            	<img src="../images/temp/case3.png">
             </div>
-           
             <!--详情 结束-->
+            
+            <!--返回首页 开始-->
+            <div class="CopWork_back">
+            	<div class="CopWork_line"></div>
+                <div class="CopWork_btn"><a href="index.html">返回首页</a></div>
+            </div>
+            <!--返回首页 结束-->
         </div>
     </div>
     <!--右边 结束-->

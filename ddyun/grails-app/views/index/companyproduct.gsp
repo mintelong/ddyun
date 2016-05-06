@@ -4,7 +4,6 @@
 <meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
-<title></title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +27,8 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
             	<dd><a href="/ddyun/index/aboutus">企业文化</a></dd>
-                <dd class="on"><a href="/ddyun/index/companyelite">企业精英</a></dd>
-                <dd><a href="/ddyun/index/companyproduct">企业产品</a></dd>
+                <dd><a href="/ddyun/index/companyelite">企业精英</a></dd>
+                <dd class="on"><a href="/ddyun/index/companyproduct">企业产品</a></dd>
                 <dd><a href="/ddyun/index/companycase">合作案例</a></dd>
                 <dd><a href="/ddyun/index/companywork">业务范围</a></dd>
                 <dd><a href="/ddyun/index/companyconnect">联系我们</a></dd>
@@ -46,6 +45,13 @@
                 <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
                 <!--循环dd 7个 结束-->
                 
+                <!--例 删除 开始-->
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
+                <dd><a href=".html">上海大限公会招聘精英</a></dd>
                 <!--例 删除 结束-->
             </dl>
         </div>
@@ -75,33 +81,66 @@
         	<!--标题 开始-->
             <div class="CopCul_title">
                 <a href="index.html">返回首页</a>
-                <h3>企业精英</h3>
+                <h3>企业产品</h3>
             </div>
             <!--标题 结束-->
 
-            <!--详情 开始-->
-            <div class="Elite_box">
+            <!--产品列表 开始-->
+            <div class="ComPro_box">
             	<ul>
-                	<!--循环li 最多8个多的分页 开始-->
+                	<!--循环li 最多9个多的分页 开始-->
                     <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/1408ssy.jpg"></div>
-                            <div class="Elite_name"><span>沈淑云</span><i>suzzy</i></div>
-                            <div class="Elite_info">
-                            	  <p>大度云计算公司董事长</p>
-                                <p>云计算的运用将会在我国政务、商务方面产生颠覆性革命</p>
-                                
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img"><img src="../images/temp/case2.png"></div>
+                            <div class="ComPro_title">
+                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                                <a href=".html">购买</a>
                             </div>
-                            <a href="#"><div class="Elite_hover"></div></a>
                         </div>
                     </li>
-                    <!--循环li 最多8个多的分页 结束-->
-                   
+                    <!--循环li 最多9个多的分页 结束-->
                     
+                    <!--例 删除 开始-->
+                    <li>
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img"><img src="../images/temp/case2.png"></div>
+                            <div class="ComPro_title">
+                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                                <a href=".html">购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img"><img src="../images/temp/case2.png"></div>
+                            <div class="ComPro_title">
+                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                                <a href=".html">购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img"><img src="../images/temp/case2.png"></div>
+                            <div class="ComPro_title">
+                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                                <a href=".html">购买</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img"><img src="../images/temp/case2.png"></div>
+                            <div class="ComPro_title">
+                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                                <a href=".html">购买</a>
+                            </div>
+                        </div>
+                    </li>
                     <!--例 删除 结束-->
                 </ul>
             </div>
-            <!--详情 结束-->
+            <!--产品列表 结束-->
             
             <!--分页 开始-->
             <div class="Elite_page">
@@ -130,6 +169,7 @@
 </div>
 </div>
 </div>
+
 
 </body>
 </html>

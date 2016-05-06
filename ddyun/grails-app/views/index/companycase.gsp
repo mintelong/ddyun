@@ -26,10 +26,10 @@
         <div class="CopCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd class="on"><a href="/ddyun/index/aboutus">企业文化</a></dd>
+            	<dd><a href="/ddyun/index/aboutus">企业文化</a></dd>
                 <dd><a href="/ddyun/index/companyelite">企业精英</a></dd>
                 <dd><a href="/ddyun/index/companyproduct">企业产品</a></dd>
-                <dd><a href="/ddyun/index/companycase">合作案例</a></dd>
+                <dd class="on"><a href="/ddyun/index/companycase">合作案例</a></dd>
                 <dd><a href="/ddyun/index/companywork">业务范围</a></dd>
                 <dd><a href="/ddyun/index/companyconnect">联系我们</a></dd>
                 <dd><a href="/ddyun/index/companynews">最新消息</a></dd>
@@ -41,8 +41,8 @@
         <div class="CopCul_info">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <!--例 删除 开始-->
-                <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
+                <!--循环dd 7个 开始-->
+               <dd><a href="/ddyun/index/companynewsdt">上海大限公会招聘精英</a></dd>
                 <!--例 删除 结束-->
             </dl>
         </div>
@@ -72,18 +72,61 @@
         	<!--标题 开始-->
             <div class="CopCul_title">
                 <a href="index.html">返回首页</a>
-                <h3>企业文化</h3>
+                <h3>合作案例</h3>
             </div>
             <!--标题 结束-->
-            
-            <!--详情 开始-->
-            <div class="CopCnect_box">
-            	<label>齐云大度  共创辉煌</label>
-                <p>		传统多媒体信息量是有局限的，在一个特定的时间、空间内传统多媒体信息量是有限的。但是，云计算--云多媒体智能系统在一个特定的时间、空间内，可以容纳无限大的信息量。可以说信息量越大，云多媒体的作用越大。可以说云多媒体智能系统就是一个图片和影像资料的搜索引擎，传统搜索引擎在处理无限量图片和影像资料时，只能单一和有限数量的处理材料。但是，云多媒体智能系统，可以在一个画面上高度密集地展现图片和影像画面，并且以相关内容形成，无限展示。这种无限相关搜索功能，可以广泛应用在政治、经济、科教文卫体各个领域。
-                大度云计算科技在此基础上开发的云多媒体高科技产品，得到了上海市有关领导及海内外的高度重视和关注。</p>         
+
+            <!--产品列表 开始-->
+            <div class="ComCase_box">
+            	<ul>
+                	<!--循环li 最多12个多的分页 开始-->
+                    <li>
+                        <div class="ComCase_cont">
+                        	<a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
+                        	<img src="../images/专精特新领军企业.jpg">
+                        	</a>
+                        </div>
+                    </li>
+                    <!--循环li 最多12个多的分页 结束-->
+                    
+                    <!--例 删除 开始-->
+                    <li>
+                        <div class="ComCase_cont">
+                        	<img src="../images/上海博物馆藏国之魂宝牺尊.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ComCase_cont">
+                        	<img src="../images/温馨塘桥宜居生活.jpg">
+                        </div>
+                    </li>
+                    
+                    <!--例 删除 结束-->
+                </ul>
             </div>
-           
-            <!--详情 结束-->
+            <!--产品列表 结束-->
+            
+            <!--分页 开始-->
+            <div class="Elite_page">
+            	<div class="Elite_line"></div>
+                <ul>
+                	<li><a href=".html">首页</a></li>
+                    <!--上一页 开始-->
+                    <li><a href=".html"><</a></li>
+                    <!--上一页 结束-->
+                    
+                    <!--页数 开始-->
+                    <li class="on"><a href=".html">1</a></li>
+                    <li><a href=".html">2</a></li>
+                    <!--页数 结束-->
+                    
+                    <!--下一页 开始-->
+                    <li><a href=".html">></a></li>
+                    <!--下一页 结束-->
+                    <li><a href=".html">末页</a></li>
+                </ul>
+            </div>
+            <!--分页 结束-->
         </div>
     </div>
     <!--右边 结束-->
