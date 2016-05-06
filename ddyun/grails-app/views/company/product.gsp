@@ -33,13 +33,13 @@
         <div class="CopCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd><a href="#">企业文化</a></dd>
-                <dd><a href="#">企业精英</a></dd>
-                <dd class="on"><a href="#">企业产品</a></dd>
-                <dd><a href="#">合作案例</a></dd>
-                <dd><a href="#">业务范围</a></dd>
-                <dd><a href="#">联系我们</a></dd>
-                <dd><a href="#">最新消息</a></dd>
+                <dd><a href="/ddyun/company/culture">企业文化</a></dd>
+                <dd><a href="/ddyun/company/elite">企业精英</a></dd>
+                <dd class="on"><a href="/ddyun/company/product">企业产品</a></dd>
+                <dd><a href="/ddyun/company/pcase">合作案例</a></dd>
+                <dd><a href="/ddyun/company/work">业务范围</a></dd>
+                <dd><a href="/ddyun/company/connect">联系我们</a></dd>
+                <dd><a href="/ddyun/company/news">最新消息</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->

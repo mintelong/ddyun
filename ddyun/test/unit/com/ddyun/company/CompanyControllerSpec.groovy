@@ -1,4 +1,4 @@
-package com.ddyun.product
+package com.ddyun.company
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
@@ -6,8 +6,8 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
  */
-@TestFor(ProductController)
-class ProductControllerSpec extends Specification {
+@TestFor(CompanyController)
+class CompanyControllerSpec extends Specification {
 
     def setup() {
     }
