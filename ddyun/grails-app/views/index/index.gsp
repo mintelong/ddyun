@@ -36,7 +36,8 @@
                 <!--新闻列表 开始-->
                 <div class="Ireal_text">
                 	<ul>
-                    	<li><a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch="><p><i></i>上海大度云计算入驻该平台</p><span>04-10</span></a></li>
+                    	<li><a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch="><p><i></i>上海大度云计算入驻本平台</p><span>04-10</span></a></li>
+                    	<li><a href="http://139.196.197.45:8080/hscsp/"><p><i></i>侨联大数据核心服务平台入驻</p><span>04-15</span></a></li>
                     </ul>
                 </div>
                 <!--新闻列表 结束-->
