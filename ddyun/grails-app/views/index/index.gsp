@@ -84,9 +84,9 @@
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'上海博物馆藏国之魂宝牺尊.jpg')}"/></a></li>
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'温馨塘桥宜居生活.jpg')}"/></a></li>
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'dadulogo.jpg')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'上海博物馆藏国之魂宝牺尊.jpg')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'温馨塘桥宜居生活.jpg')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'dadulogo.png')}"/></a></li>
                 <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
                 <!--例 删除 结束-->
             </ul>
