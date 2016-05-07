@@ -82,63 +82,17 @@
             	<ul>
                 	<!--循环li 最多8个多的分页 开始-->
                     <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/temp/case2.png"></div>
-                            <div class="Elite_name"><span>名字</span><i>name</i></div>
+                       <div class="Elite_cont">
+                        	<div class="Elite_img"><img src="../images/linjun.jpg"></div>
+                            <div class="Elite_name"><span>林军</span><i>中国侨联主席</i></div>
                             <div class="Elite_info">
-                                <p>格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言</p>
-                                <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                <p>第七届、第八届、第九届中国侨联主席</p>
                             </div>
                             <a href=".html"><div class="Elite_hover"></div></a>
                         </div>
                     </li>
                     <!--循环li 最多8个多的分页 结束-->
-                    
-                    <!--例 删除 开始-->
-                    <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/temp/case2.png"></div>
-                            <div class="Elite_name"><span>名字</span><i>name</i></div>
-                            <div class="Elite_info">
-                                <p>格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言</p>
-                                <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-                            </div>
-                            <a href=".html"><div class="Elite_hover"></div></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/temp/case2.png"></div>
-                            <div class="Elite_name"><span>名字</span><i>name</i></div>
-                            <div class="Elite_info">
-                                <p>格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言</p>
-                                <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-                            </div>
-                            <a href=".html"><div class="Elite_hover"></div></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/temp/case2.png"></div>
-                            <div class="Elite_name"><span>名字</span><i>name</i></div>
-                            <div class="Elite_info">
-                                <p>格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言</p>
-                                <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-                            </div>
-                            <a href=".html"><div class="Elite_hover"></div></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/temp/case2.png"></div>
-                            <div class="Elite_name"><span>名字</span><i>name</i></div>
-                            <div class="Elite_info">
-                                <p>格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言格言</p>
-                                <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-                            </div>
-                            <a href=".html"><div class="Elite_hover"></div></a>
-                        </div>
-                    </li>
+                
                     <!--例 删除 结束-->
                 </ul>
             </div>
