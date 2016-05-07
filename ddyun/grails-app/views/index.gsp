@@ -4,6 +4,7 @@
 <meta name="layout" content="main">
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
+<title>大度云</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,17 +36,7 @@
                 <!--新闻列表 开始-->
                 <div class="Ireal_text">
                 	<ul>
-                    	<!--循环li 6条 开始-->
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <!--循环li 6条 结束-->
-                        
-                        <!--例 删除 开始-->
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <li><a href=".html"><p><i></i>某集团4入驻该平台某集团4入驻该平台</p><span>04-10</span></a></li>
-                        <!--例 删除 结束-->
+                    	<li><a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch="><p><i></i>上海大度云计算入驻该平台</p><span>04-10</span></a></li>
                     </ul>
                 </div>
                 <!--新闻列表 结束-->
@@ -61,7 +52,7 @@
         	<li><a href=".html"><i class="qicont"></i><p>企业导航</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>智囊库</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>资料下载</p></a></li>
-            <li><a href=".html"><i class="qicont"></i><p>中国侨联</p></a></li>
+            <li><a href="/ddyun/index/rocfculture"><i class="qicont"></i><p>中国侨联</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>常用工具</p></a></li>
         </ul>
     </div>
@@ -89,13 +80,13 @@
         <div class="Ishow_border">
         	<ul>
             	<!--循环li 5个 开始-->
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'专精特新领军企业.jpg')}"/></a></li>
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
-                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'上海博物馆藏国之魂宝牺尊.jpg')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'温馨塘桥宜居生活.jpg')}"/></a></li>
+                <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images',file:'dadulogo.png')}"/></a></li>
                 <li><a href="/ddyun/company/product"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
                 <!--例 删除 结束-->
             </ul>
@@ -118,16 +109,14 @@
         <!--新闻动态 开始-->
         <div class="Inews_list" id="list_one">
         	<ul>
-            	<!--循环li 8个 开始-->
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
+       <!--循环li 8个 开始-->
+                <li><a href=".html"><p><i></i>中国侨联主席林军出席丙申年黄帝故里拜祖大典并担任主司仪</p></a></li>
                 <!--循环li 8个 结束-->
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
+                <li><a href=".html"><p><i></i>林军主席、乔卫副主席会见世界青年总裁组织北京峰会侨胞代表</p></a></li>
+                <li><a href=".html"><p><i></i>乔卫副主席为全国统战部长培训班做辅导报告</p></a></li>
+                <li><a href=".html"><p><i></i>林军主席在洛阳考察调研并为河南省首家新侨创新创业基地揭牌</p></a></li>
+                <li><a href=".html"><p><i></i>2016年上半年中国侨联法顾委主任会议在京召开</p></a></li>
+                <li><a href=".html"><p><i></i>中国侨联召开“两学一做”学习教育工作动员大会</p></a></li>
             </ul>
         </div>
         <!--新闻动态 结束-->
@@ -136,15 +125,13 @@
         <div class="Inews_list" id="list_two" style="display:none;">
         	<ul>
             	<!--循环li 8个 开始-->
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东11111111</p></a></li>
+                <li><a href=".html"><p><i></i>中国侨联主席林军出席丙申年黄帝故里拜祖大典并担任主司仪</p></a></li>
                 <!--循环li 8个 结束-->
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
-                <li><a href=".html"><p><i></i>山东确定十大优势产业 打造"山东 山东确定十大优势产业山东确定十大优势产业山东确定十大优势产业</p></a></li>
+                <li><a href=".html"><p><i></i>林军主席、乔卫副主席会见世界青年总裁组织北京峰会侨胞代表</p></a></li>
+                <li><a href=".html"><p><i></i>乔卫副主席为全国统战部长培训班做辅导报告</p></a></li>
+                <li><a href=".html"><p><i></i>林军主席在洛阳考察调研并为河南省首家新侨创新创业基地揭牌</p></a></li>
+                <li><a href=".html"><p><i></i>2016年上半年中国侨联法顾委主任会议在京召开</p></a></li>
+                <li><a href=".html"><p><i></i>中国侨联召开“两学一做”学习教育工作动员大会</p></a></li>
             </ul>
         </div>
         <!--需求时讯 结束-->
