@@ -95,51 +95,17 @@
             <!--产品列表 开始-->
             <div class="ComPro_box">
             	<ul>
-                	<!--循环li 最多9个多的分页 开始-->
-                    <li>
+                	
+                     <li>
                         <div class="ComPro_cont">
-                        	<div class="ComPro_img"><img src="${resource(dir:'images/temp',file:'case2.png')}"></div>
+                        	<div class="ComPro_img">
+                        	  <a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
+                      
+                        	<img src="../images/温馨塘桥宜居生活.jpg">
+                        	</a>
+                        	</div>
                             <div class="ComPro_title">
-                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
-                                <a href=".html">购买</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!--循环li 最多9个多的分页 结束-->
-                    
-                    <!--例 删除 开始-->
-                    <li>
-                        <div class="ComPro_cont">
-                        	<div class="ComPro_img"><img src="${resource(dir:'images/temp',file:'case2.png')}"></div>
-                            <div class="ComPro_title">
-                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
-                                <a href=".html">购买</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ComPro_cont">
-                        	<div class="ComPro_img"><img src="${resource(dir:'images/temp',file:'case2.png')}"></div>
-                            <div class="ComPro_title">
-                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
-                                <a href=".html">购买</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ComPro_cont">
-                        	<div class="ComPro_img"><img src="${resource(dir:'images/temp',file:'case2.png')}"></div>
-                            <div class="ComPro_title">
-                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
-                                <a href=".html">购买</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ComPro_cont">
-                        	<div class="ComPro_img"><img src="${resource(dir:'images/temp',file:'case2.png')}"></div>
-                            <div class="ComPro_title">
-                            	<p>产品标题产品标题产品标题产品标题产品标题产品标题</p>
+                            	<p>大度云多媒体系统</p>
                                 <a href=".html">购买</a>
                             </div>
                         </div>
