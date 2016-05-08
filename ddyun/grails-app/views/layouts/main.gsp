@@ -42,7 +42,7 @@
 						
 						<sec:ifLoggedIn>
 		                <li>
-							<a href="##"><p><sec:username/></p></a>			
+							<a href="/ddyun/usercenter/index"><p><sec:username/></p></a>			
 							<a href="##" onclick="$('#logout').submit();">退出</a>
 		                </li>
 		                </sec:ifLoggedIn>
