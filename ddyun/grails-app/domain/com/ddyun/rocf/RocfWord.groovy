@@ -1,10 +1,9 @@
-package com.ddyun.company
+package com.ddyun.rocf
 
-class CompanyNews {
+class RocfWord {
 	
 	private String title;
 	private String content;
-	private String logo;
 	private Date date;
 
     static constraints = {

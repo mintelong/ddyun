@@ -1,0 +1,104 @@
+package com.ddyun.rocf
+
+
+
+import static org.springframework.http.HttpStatus.*
+import grails.transaction.Transactional
+
+@Transactional(readOnly = true)
+class RocfCultureController {
+
+    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+
+    def index(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        respond RocfCulture.list(params), model:[rocfCultureInstanceCount: RocfCulture.count()]
+    }
+
+    def show(RocfCulture rocfCultureInstance) {
+        respond rocfCultureInstance
+    }
+
+    def create() {
+        respond new RocfCulture(params)
+    }
+
+    @Transactional
+    def save(RocfCulture rocfCultureInstance) {
+        if (rocfCultureInstance == null) {
+            notFound()
+            return
+        }
+
+        if (rocfCultureInstance.hasErrors()) {
+            respond rocfCultureInstance.errors, view:'create'
+            return
+        }
+
+        rocfCultureInstance.save flush:true
+
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.created.message', args: [message(code: 'rocfCulture.label', default: 'RocfCulture'), rocfCultureInstance.id])
+                redirect rocfCultureInstance
+            }
+            '*' { respond rocfCultureInstance, [status: CREATED] }
+        }
+    }
+
+    def edit(RocfCulture rocfCultureInstance) {
+        respond rocfCultureInstance
+    }
+
+    @Transactional
+    def update(RocfCulture rocfCultureInstance) {
+        if (rocfCultureInstance == null) {
+            notFound()
+            return
+        }
+
+        if (rocfCultureInstance.hasErrors()) {
+            respond rocfCultureInstance.errors, view:'edit'
+            return
+        }
+
+        rocfCultureInstance.save flush:true
+
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'RocfCulture.label', default: 'RocfCulture'), rocfCultureInstance.id])
+                redirect rocfCultureInstance
+            }
+            '*'{ respond rocfCultureInstance, [status: OK] }
+        }
+    }
+
+    @Transactional
+    def delete(RocfCulture rocfCultureInstance) {
+
+        if (rocfCultureInstance == null) {
+            notFound()
+            return
+        }
+
+        rocfCultureInstance.delete flush:true
+
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfCulture.label', default: 'RocfCulture'), rocfCultureInstance.id])
+                redirect action:"index", method:"GET"
+            }
+            '*'{ render status: NO_CONTENT }
+        }
+    }
+
+    protected void notFound() {
+        request.withFormat {
+            form multipartForm {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'rocfCulture.label', default: 'RocfCulture'), params.id])
+                redirect action: "index", method: "GET"
+            }
+            '*'{ render status: NOT_FOUND }
+        }
+    }
+}

@@ -1,6 +1,6 @@
-package com.ddyun.company
+package com.ddyun.rocf
 
-class CompanyElite {
+class RocfLeader {
 	
 	private String name;
 	private String englishName;

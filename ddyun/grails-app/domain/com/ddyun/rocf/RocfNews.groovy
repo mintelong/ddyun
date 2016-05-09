@@ -1,6 +1,8 @@
-package com.ddyun.company
+package com.ddyun.rocf
 
-class CompanyNews {
+import java.util.Date;
+
+class RocfNews {
 	
 	private String title;
 	private String content;
