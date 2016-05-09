@@ -36,4 +36,14 @@ class CompanyController {
 		
 		render view:'work',model:[]
 	}
+	
+	def law() {
+		
+		render view:'law',model:[]
+	}
+	
+	def law2() {
+		
+		render view:'law2',model:[]
+	}
 }
