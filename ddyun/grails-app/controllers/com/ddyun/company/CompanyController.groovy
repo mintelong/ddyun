@@ -46,4 +46,9 @@ class CompanyController {
 		
 		render view:'law2',model:[]
 	}
+	
+	def pronav() {
+		
+		render view:'pronav',model:[]
+	}
 }
