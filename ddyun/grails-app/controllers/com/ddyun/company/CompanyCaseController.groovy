@@ -1,14 +1,17 @@
 package com.ddyun.company
 
 import static org.springframework.http.HttpStatus.*
+
+import java.util.Date;
+import org.springframework.web.multipart.MultipartFile
+import com.ddyun.common.FileHandle
+
 import grails.transaction.Transactional
 
-import com.ddyun.util.FileUtil
-
-@Transactional(readOnly = true)
+@Transactional(readOnly = false)
 class CompanyCaseController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -24,16 +27,27 @@ class CompanyCaseController {
     }
 
     @Transactional
-    def save(CompanyCase companyCaseInstance) {
-        if (companyCaseInstance == null) {
-            notFound()
-            return
-        }
-
-        if (companyCaseInstance.hasErrors()) {
-            respond companyCaseInstance.errors, view:'create'
-            return
-        }
+    def save() {
+        CompanyCase companyCaseInstance = new CompanyCase(
+			name : params.name,
+			date : new Date()
+		)
+		
+		MultipartFile logo = request.getFile("logo")
+		
+		def rootPath = request.getSession().getServletContext().getRealPath("/")
+		
+		if(logo&&!logo.isEmpty()) {
+			def userDir = new File(rootPath + "ddyunimg" ,"/")
+//			def userDir = new File(propertiesService.catchNewsImgUploadPath() ,"/")
+			userDir.mkdirs()
+			String filenameExt=FileHandle.getFilenameExtention(logo.getOriginalFilename())
+			String newFilename=String.format("%tY%<tm%<td%<tH%<tM%<tS", new Date()) +"_" + (new Random().nextInt(1000))+"." + filenameExt
+			logo.transferTo( new File(userDir, newFilename))
+			companyCaseInstance.logo = newFilename
+		}else{
+			companyCaseInstance.logo = "default.jpg"
+		}
 
         companyCaseInstance.save flush:true
 
