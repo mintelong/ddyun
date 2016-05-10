@@ -77,7 +77,7 @@
             <div class="Coplaw_Linfo" id="list_one">
             	<ul>
                 	<!--循环li 开始-->
-                    <li><a href=".html"><p><i></i>上海大度云计算科技有限公司</p></a></li>
+                    <li><a href="/ddyun/company/aboutus"><p><i></i>上海大度云计算科技有限公司</p></a></li>
                     <!--循环li 结束-->
                     
                 </ul>

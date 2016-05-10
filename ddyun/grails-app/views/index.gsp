@@ -74,7 +74,7 @@
 	<!--产品展示 开始-->
     <div class="Ishow_box">
     	<!--标题 开始-->
-        <div class="Ishow_title"><a href="/ddyun/product/productList"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
+        <div class="Ishow_title"><a href="/ddyun/company/pronav"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
         <!--标题 结束-->
         
         <!--产品图片 开始-->

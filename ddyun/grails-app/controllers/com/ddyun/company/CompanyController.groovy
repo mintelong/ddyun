@@ -51,4 +51,37 @@ class CompanyController {
 		
 		render view:'pronav',model:[]
 	}
+	
+	def aboutus() {
+		
+		render view:'aboutus',model:[]
+	}
+	
+	def companycase() {
+		
+		render view:'companycase',model:[]
+	}
+	
+	def companyconnect() {
+		
+		render view:'companyconnect',model:[]
+	}
+	def companyelite() {
+		
+		render view:'companyelite',model:[]
+	}
+	def companynews() {
+		
+		render view:'companynews',model:[]
+	}
+	def companynewsdt() {
+		
+		render view:'companynewsdt',model:[]
+	}
+	def companywork() {
+		
+		render view:'companywork',model:[]
+	}
+	
+	
 }
