@@ -1,9 +1,9 @@
 package com.ddyun.company
 
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+
+import com.ddyun.util.FileUtil
 
 @Transactional(readOnly = true)
 class CompanyCaseController {
@@ -101,4 +101,6 @@ class CompanyCaseController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	
+	
 }
