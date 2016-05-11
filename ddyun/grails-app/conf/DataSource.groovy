@@ -4,8 +4,8 @@ import org.springframework.core.io.support.PropertiesLoaderUtils
 hibernate {
     cache.use_second_level_cache = true
     cache.use_query_cache = false
-//    cache.region.factory_class = 'net.sf.ehcache.hibernate.EhCacheRegionFactory' // Hibernate 3
-    cache.region.factory_class = 'org.hibernate.cache.ehcache.EhCacheRegionFactory' // Hibernate 4
+    cache.region.factory_class = 'net.sf.ehcache.hibernate.EhCacheRegionFactory' // Hibernate 3
+//    cache.region.factory_class = 'org.hibernate.cache.ehcache.EhCacheRegionFactory' // Hibernate 4
     singleSession = true // configure OSIV singleSession mode
     flush.mode = 'manual' // OSIV session flush mode outside of transactional context
 }
@@ -23,6 +23,7 @@ environments {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://139.196.197.45:3306/ddyundevdb?useUnicode=true&characterEncoding=UTF-8"
+			//url = "jdbc:mysql://localhost:3306/ddyundevdb?useUnicode=true&characterEncoding=UTF-8"
         }
     }
     production {

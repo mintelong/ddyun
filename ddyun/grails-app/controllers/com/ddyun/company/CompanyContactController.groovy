@@ -8,7 +8,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class CompanyContactController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -20,11 +20,25 @@ class CompanyContactController {
     }
 
     def create() {
-        respond new CompanyContact(params)
+        //respond new CompanyContact(params)
+		render view:"create",model:[]
     }
 
     @Transactional
-    def save(CompanyContact companyContactInstance) {
+    def save() {
+		
+		String tel = request.getParameter("tel")
+		String address = request.getParameter("address")
+		String officer = request.getParameter("officer")
+		String email = request.getParameter("email")
+		
+		CompanyContact companyContactInstance = new CompanyContact()
+		companyContactInstance.tel = tel
+		companyContactInstance.address = address
+		companyContactInstance.officer = officer
+		companyContactInstance.email = email
+		companyContactInstance.date = new Date()
+		
         if (companyContactInstance == null) {
             notFound()
             return
@@ -37,13 +51,14 @@ class CompanyContactController {
 
         companyContactInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'companyContact.label', default: 'CompanyContact'), companyContactInstance.id])
                 redirect companyContactInstance
             }
             '*' { respond companyContactInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(CompanyContact companyContactInstance) {
@@ -74,23 +89,34 @@ class CompanyContactController {
     }
 
     @Transactional
-    def delete(CompanyContact companyContactInstance) {
-
+    def delete() {
+		
+		CompanyContact companyContactInstance = CompanyContact.findById(params.id)
+		
         if (companyContactInstance == null) {
             notFound()
             return
         }
 
         companyContactInstance.delete flush:true
-
-        request.withFormat {
+		
+		redirect (action: "list")
+		
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'CompanyContact.label', default: 'CompanyContact'), companyContactInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<CompanyContact> lists = CompanyContact.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

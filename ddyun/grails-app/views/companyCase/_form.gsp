@@ -40,7 +40,7 @@
             	<ul>
                 	<li>
                         <span><i class="Required">*</i>产品名称：
-                        	<input type="text" name="name" id="" value="">
+                        	<input type="text" name="name" id="name" value="">
                         </span>
                     </li>
                     <li>
@@ -62,7 +62,7 @@
                         
                         
                     </li>
-                    <li><a href="#" class="btn btn-primary radius4">保存</a></li>
+                    <li><a href="/ddyun/companyCase/save" class="btn btn-primary radius4">保存</a></li>
                 </ul>
             </div>
         </div>

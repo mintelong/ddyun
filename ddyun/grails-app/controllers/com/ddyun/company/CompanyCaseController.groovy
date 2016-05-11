@@ -11,7 +11,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = false)
 class CompanyCaseController {
 
-    static allowedMethods = [save: "POST", delete: "DELETE"]
+   // static allowedMethods = [save: "POST", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -23,15 +23,20 @@ class CompanyCaseController {
     }
 
     def create() {
-        respond new CompanyCase(params)
+        //respond new CompanyCase(params)
+		render view:"create",model:[]
     }
 
     @Transactional
     def save() {
-        CompanyCase companyCaseInstance = new CompanyCase(
-			name : params.name,
-			date : new Date()
-		)
+		
+		String name = request.getParameter("name")
+		String describe = request.getParameter("describe")
+		
+        CompanyCase companyCaseInstance = new CompanyCase()
+		companyCaseInstance.name = name
+		companyCaseInstance.description = describe
+		companyCaseInstance.date = new Date()
 		
 		MultipartFile logo = request.getFile("logo")
 		
@@ -51,13 +56,15 @@ class CompanyCaseController {
 
         companyCaseInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'companyCase.label', default: 'CompanyCase'), companyCaseInstance.id])
                 redirect companyCaseInstance
             }
             '*' { respond companyCaseInstance, [status: CREATED] }
-        }
+        }*/
+		
+		redirect (action: "list")
     }
 
     def edit(CompanyCase companyCaseInstance) {
@@ -88,23 +95,34 @@ class CompanyCaseController {
     }
 
     @Transactional
-    def delete(CompanyCase companyCaseInstance) {
-
+    def delete() {
+		
+		CompanyCase companyCaseInstance = CompanyCase.findById(params.id)
+		
         if (companyCaseInstance == null) {
             notFound()
             return
         }
 
         companyCaseInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'CompanyCase.label', default: 'CompanyCase'), companyCaseInstance.id])
-                redirect action:"index", method:"GET"
+                redirect action:"list", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<CompanyCase> lists = CompanyCase.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

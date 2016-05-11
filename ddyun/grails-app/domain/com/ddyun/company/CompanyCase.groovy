@@ -2,10 +2,15 @@ package com.ddyun.company
 
 class CompanyCase {
 	
-	private String name;
-	private String logo;
-	private Date date;
+	String name
+	String description
+	String logo
+	Date date
 
     static constraints = {
+		name nullable: true
+		description nullable: true
+		logo nullable: true
+		date nullable: true
     }
 }

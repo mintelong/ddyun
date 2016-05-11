@@ -37,4 +37,27 @@ class ImageController {
 		
 		render "{\"success\":\"" + true + "\",\"file_path\":\"" + "/scfire/project/imgRead?img="+img + "\"}";
 	}
+	
+	/**
+	 * 读取图片信息
+	 * @param null
+	 * @return null
+	 *
+	 * **/
+	def imgRead(String img){
+		if(!img)
+			return
+		try{
+			OutputStream page=response.getOutputStream()
+			byte [] data = FileUtil.imgRead(img)
+			if(data != null){
+				page.write(data)
+				page.close()
+			}
+			
+		}catch(Exception e){
+			return null
+		}
+		return null
+	}
 }

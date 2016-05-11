@@ -2,11 +2,15 @@ package com.ddyun.company
 
 class CompanyNews {
 	
-	private String title;
-	private String content;
-	private String logo;
-	private Date date;
+	String title;
+	String content;
+	String logo;
+	Date date;
 
     static constraints = {
+		title nullable: true
+		content nullable: true
+		logo nullable: true
+		date nullable: true
     }
 }

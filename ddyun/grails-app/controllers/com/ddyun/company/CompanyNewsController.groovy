@@ -4,11 +4,12 @@ package com.ddyun.company
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import org.springframework.web.multipart.MultipartFile
 
 @Transactional(readOnly = true)
 class CompanyNewsController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -20,11 +21,21 @@ class CompanyNewsController {
     }
 
     def create() {
-        respond new CompanyNews(params)
+        //respond new CompanyNews(params)
+		render view:"create",model:[]
     }
 
     @Transactional
-    def save(CompanyNews companyNewsInstance) {
+    def save() {
+		
+		String title = request.getParameter("title")
+		String content = request.getParameter("content")
+		
+		CompanyNews companyNewsInstance = new CompanyNews()
+		companyNewsInstance.title = title
+		companyNewsInstance.content = content
+		companyNewsInstance.date = new Date()
+			
         if (companyNewsInstance == null) {
             notFound()
             return
@@ -34,16 +45,33 @@ class CompanyNewsController {
             respond companyNewsInstance.errors, view:'create'
             return
         }
+		
+		MultipartFile logo = request.getFile("logo")
+		
+		def rootPath = request.getSession().getServletContext().getRealPath("/")
+		
+		if(logo&&!logo.isEmpty()) {
+			def userDir = new File(rootPath + "ddyunimg" ,"/")
+//			def userDir = new File(propertiesService.catchNewsImgUploadPath() ,"/")
+			userDir.mkdirs()
+			String filenameExt=FileHandle.getFilenameExtention(logo.getOriginalFilename())
+			String newFilename=String.format("%tY%<tm%<td%<tH%<tM%<tS", new Date()) +"_" + (new Random().nextInt(1000))+"." + filenameExt
+			logo.transferTo( new File(userDir, newFilename))
+			companyNewsInstance.logo = newFilename
+		}else{
+			companyNewsInstance.logo = "default.jpg"
+		}
 
         companyNewsInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'companyNews.label', default: 'CompanyNews'), companyNewsInstance.id])
                 redirect companyNewsInstance
             }
             '*' { respond companyNewsInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(CompanyNews companyNewsInstance) {
@@ -74,7 +102,9 @@ class CompanyNewsController {
     }
 
     @Transactional
-    def delete(CompanyNews companyNewsInstance) {
+    def delete() {
+		
+		CompanyNews companyNewsInstance = CompanyNews.findById(params.id)
 
         if (companyNewsInstance == null) {
             notFound()
@@ -82,15 +112,24 @@ class CompanyNewsController {
         }
 
         companyNewsInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'CompanyNews.label', default: 'CompanyNews'), companyNewsInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<CompanyNews> lists = CompanyNews.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

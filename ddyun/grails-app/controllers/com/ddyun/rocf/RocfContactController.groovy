@@ -8,7 +8,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class RocfContactController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -20,11 +20,25 @@ class RocfContactController {
     }
 
     def create() {
-        respond new RocfContact(params)
+        //respond new RocfContact(params)
+		render view:"create",model:[]
     }
 
     @Transactional
-    def save(RocfContact rocfContactInstance) {
+    def save() {
+		
+		String tel = request.getParameter("tel")
+		String address = request.getParameter("address")
+		String officer = request.getParameter("officer")
+		String email = request.getParameter("email")
+		
+		RocfContact rocfContactInstance = new RocfContact()
+		rocfContactInstance.tel = tel
+		rocfContactInstance.address = address
+		rocfContactInstance.officer = officer
+		rocfContactInstance.email = email
+		rocfContactInstance.date = new Date()
+		
         if (rocfContactInstance == null) {
             notFound()
             return
@@ -37,13 +51,14 @@ class RocfContactController {
 
         rocfContactInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'rocfContact.label', default: 'RocfContact'), rocfContactInstance.id])
                 redirect rocfContactInstance
             }
             '*' { respond rocfContactInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(RocfContact rocfContactInstance) {
@@ -74,23 +89,34 @@ class RocfContactController {
     }
 
     @Transactional
-    def delete(RocfContact rocfContactInstance) {
-
+    def delete() {
+		
+		RocfContact rocfContactInstance = RocfContact.findById(params.id)
+		
         if (rocfContactInstance == null) {
             notFound()
             return
         }
 
         rocfContactInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfContact.label', default: 'RocfContact'), rocfContactInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<RocfContact> lists = RocfContact.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

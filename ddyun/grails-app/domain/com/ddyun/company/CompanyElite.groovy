@@ -1,14 +1,24 @@
 package com.ddyun.company
 
+import java.util.Date;
+
 class CompanyElite {
 	
-	private String name;
-	private String englishName;
-	private String title;
-	private String shortResume;
-	private String longResume;
-	private String logo;
+	String name;
+	String englishName;
+	String title;
+	String shortResume;
+	String longResume;
+	String logo;
+	Date date;
 
     static constraints = {
+		name nullable: true
+		englishName nullable: true
+		title nullable: true
+		shortResume nullable: true
+		longResume nullable: true
+		logo nullable: true
+		date nullable: true
     }
 }

@@ -34,8 +34,7 @@
         	<dl>
             	<dt><em class="qicont"></em></dt>
                 <dd class="on"><a href="/ddyun/usercenter/index">用户中心</a></dd>
-                <dd><a href="/ddyun/usercenter/publicmessage">发布信息</a></dd>
-                <dd><a href="/ddyun/usercenter/mymessage">我的信息</a></dd>
+                <dd><a href="/ddyun/companyCase/list">发布信息</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->

@@ -8,7 +8,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class RocfWordController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -20,11 +20,20 @@ class RocfWordController {
     }
 
     def create() {
-        respond new RocfWord(params)
+        //respond new RocfWord(params)
+		render view:"create",model:[]
     }
 
     @Transactional
-    def save(RocfWord rocfWordInstance) {
+    def save() {
+		
+		String title = request.getParameter("title")
+		String content = request.getParameter("content")
+		
+		RocfWord rocfWordInstance = new RocfWord()
+		rocfWordInstance.title = title
+		rocfWordInstance.content = content
+		
         if (rocfWordInstance == null) {
             notFound()
             return
@@ -37,13 +46,15 @@ class RocfWordController {
 
         rocfWordInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'rocfWord.label', default: 'RocfWord'), rocfWordInstance.id])
                 redirect rocfWordInstance
             }
             '*' { respond rocfWordInstance, [status: CREATED] }
-        }
+        }*/
+		
+		redirect (action: "list")
     }
 
     def edit(RocfWord rocfWordInstance) {
@@ -74,7 +85,9 @@ class RocfWordController {
     }
 
     @Transactional
-    def delete(RocfWord rocfWordInstance) {
+    def delete() {
+		
+		RocfWord rocfWordInstance = RocfWord.findById(params.id)
 
         if (rocfWordInstance == null) {
             notFound()
@@ -82,16 +95,25 @@ class RocfWordController {
         }
 
         rocfWordInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfWord.label', default: 'RocfWord'), rocfWordInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
-
+	
+	def list() {
+		
+		List<RocfWord> lists = RocfWord.list()
+		
+		render view:"list",model:[lists:lists]
+	}
+	
     protected void notFound() {
         request.withFormat {
             form multipartForm {

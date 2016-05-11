@@ -4,11 +4,12 @@ package com.ddyun.rocf
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import org.springframework.web.multipart.MultipartFile
 
 @Transactional(readOnly = true)
 class RocfLeaderController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -24,7 +25,23 @@ class RocfLeaderController {
     }
 
     @Transactional
-    def save(RocfLeader rocfLeaderInstance) {
+    def save() {
+		
+		String name = request.getParameter("name")
+		String englishName = request.getParameter("englishName")
+		String title = request.getParameter("title")
+		String shortResume = request.getParameter("shortResume")
+		String longResume = request.getParameter("longResume")
+		
+		RocfLeader rocfLeaderInstance = new RocfLeader()
+		rocfLeaderInstance.name = name
+		rocfLeaderInstance.englishName = englishName
+		rocfLeaderInstance.title = title
+		rocfLeaderInstance.shortResume = shortResume
+		rocfLeaderInstance.longResume = longResume
+		rocfLeaderInstance.date = new Date()
+		
+		
         if (rocfLeaderInstance == null) {
             notFound()
             return
@@ -34,16 +51,33 @@ class RocfLeaderController {
             respond rocfLeaderInstance.errors, view:'create'
             return
         }
+		
+		MultipartFile logo = request.getFile("logo")
+		
+		def rootPath = request.getSession().getServletContext().getRealPath("/")
+		
+		if(logo&&!logo.isEmpty()) {
+			def userDir = new File(rootPath + "ddyunimg" ,"/")
+//			def userDir = new File(propertiesService.catchNewsImgUploadPath() ,"/")
+			userDir.mkdirs()
+			String filenameExt=FileHandle.getFilenameExtention(logo.getOriginalFilename())
+			String newFilename=String.format("%tY%<tm%<td%<tH%<tM%<tS", new Date()) +"_" + (new Random().nextInt(1000))+"." + filenameExt
+			logo.transferTo( new File(userDir, newFilename))
+			rocfLeaderInstance.logo = newFilename
+		}else{
+			rocfLeaderInstance.logo = "default.jpg"
+		}
 
         rocfLeaderInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'rocfLeader.label', default: 'RocfLeader'), rocfLeaderInstance.id])
                 redirect rocfLeaderInstance
             }
             '*' { respond rocfLeaderInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(RocfLeader rocfLeaderInstance) {
@@ -74,7 +108,9 @@ class RocfLeaderController {
     }
 
     @Transactional
-    def delete(RocfLeader rocfLeaderInstance) {
+    def delete() {
+		
+		RocfLeader rocfLeaderInstance = RocfLeader.findById(params.id)
 
         if (rocfLeaderInstance == null) {
             notFound()
@@ -82,15 +118,24 @@ class RocfLeaderController {
         }
 
         rocfLeaderInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfLeader.label', default: 'RocfLeader'), rocfLeaderInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<RocfLeader> lists = RocfLeader.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

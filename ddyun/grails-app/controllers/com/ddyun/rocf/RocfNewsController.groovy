@@ -4,11 +4,12 @@ package com.ddyun.rocf
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import org.springframework.web.multipart.MultipartFile
 
 @Transactional(readOnly = true)
 class RocfNewsController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -20,11 +21,21 @@ class RocfNewsController {
     }
 
     def create() {
-        respond new RocfNews(params)
+        //respond new RocfNews(params)
+		render view:"create",model:[]
     }
 
     @Transactional
-    def save(RocfNews rocfNewsInstance) {
+    def save() {
+		
+		String title = request.getParameter("title")
+		String content = request.getParameter("content")
+		
+		RocfNews rocfNewsInstance = new RocfNews()
+		rocfNewsInstance.title = title
+		rocfNewsInstance.content = content
+		rocfNewsInstance.date = new Date()
+		
         if (rocfNewsInstance == null) {
             notFound()
             return
@@ -34,16 +45,33 @@ class RocfNewsController {
             respond rocfNewsInstance.errors, view:'create'
             return
         }
+		
+		MultipartFile logo = request.getFile("logo")
+		
+		def rootPath = request.getSession().getServletContext().getRealPath("/")
+		
+		if(logo&&!logo.isEmpty()) {
+			def userDir = new File(rootPath + "ddyunimg" ,"/")
+//			def userDir = new File(propertiesService.catchNewsImgUploadPath() ,"/")
+			userDir.mkdirs()
+			String filenameExt=FileHandle.getFilenameExtention(logo.getOriginalFilename())
+			String newFilename=String.format("%tY%<tm%<td%<tH%<tM%<tS", new Date()) +"_" + (new Random().nextInt(1000))+"." + filenameExt
+			logo.transferTo( new File(userDir, newFilename))
+			rocfNewsInstance.logo = newFilename
+		}else{
+			rocfNewsInstance.logo = "default.jpg"
+		}
 
         rocfNewsInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'rocfNews.label', default: 'RocfNews'), rocfNewsInstance.id])
                 redirect rocfNewsInstance
             }
             '*' { respond rocfNewsInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(RocfNews rocfNewsInstance) {
@@ -74,23 +102,34 @@ class RocfNewsController {
     }
 
     @Transactional
-    def delete(RocfNews rocfNewsInstance) {
-
+    def delete() {
+		
+		RocfNews rocfNewsInstance = RocfNews.findById(params.id)
+		
         if (rocfNewsInstance == null) {
             notFound()
             return
         }
 
         rocfNewsInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfNews.label', default: 'RocfNews'), rocfNewsInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<RocfNews> lists = RocfNews.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {

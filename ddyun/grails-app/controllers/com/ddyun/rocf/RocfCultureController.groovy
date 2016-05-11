@@ -8,7 +8,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class RocfCultureController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -24,7 +24,16 @@ class RocfCultureController {
     }
 
     @Transactional
-    def save(RocfCulture rocfCultureInstance) {
+    def save() {
+				
+		String title = request.getParameter("title")
+		String content = request.getParameter("content")
+		
+		RocfCulture rocfCultureInstance = new RocfCulture()
+		rocfCultureInstance.title = title
+		rocfCultureInstance.content = content
+		rocfCultureInstance.date = new Date()
+		
         if (rocfCultureInstance == null) {
             notFound()
             return
@@ -37,13 +46,14 @@ class RocfCultureController {
 
         rocfCultureInstance.save flush:true
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.created.message', args: [message(code: 'rocfCulture.label', default: 'RocfCulture'), rocfCultureInstance.id])
                 redirect rocfCultureInstance
             }
             '*' { respond rocfCultureInstance, [status: CREATED] }
-        }
+        }*/
+		redirect (action: "list")
     }
 
     def edit(RocfCulture rocfCultureInstance) {
@@ -74,23 +84,34 @@ class RocfCultureController {
     }
 
     @Transactional
-    def delete(RocfCulture rocfCultureInstance) {
-
+    def delete() {
+		
+		RocfCulture rocfCultureInstance = RocfCulture.findById(params.id)
+		
         if (rocfCultureInstance == null) {
             notFound()
             return
         }
 
         rocfCultureInstance.delete flush:true
+		
+		redirect (action: "list")
 
-        request.withFormat {
+        /*request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'RocfCulture.label', default: 'RocfCulture'), rocfCultureInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
+	
+	def list() {
+		
+		List<RocfCulture> lists = RocfCulture.list()
+		
+		render view:"list",model:[lists:lists]
+	}
 
     protected void notFound() {
         request.withFormat {
