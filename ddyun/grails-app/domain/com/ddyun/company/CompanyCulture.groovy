@@ -13,4 +13,8 @@ class CompanyCulture {
 		companyCultureContent nullable: true
 		date nullable: true
     }
+	
+	String toString() {
+		return this.companyName //+ " - " + this.spType + " - " + this.country
+	}
 }

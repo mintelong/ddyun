@@ -7,6 +7,7 @@ class CompanyProduct {
 	String logo;
 	double price;
 	Date date;
+	CompanyCulture companyId;
 
     static constraints = {
 		name nullable: true
@@ -14,5 +15,6 @@ class CompanyProduct {
 		logo nullable: true
 		price nullable: true
 		date nullable: true
+		companyId(blank : false)
     }
 }

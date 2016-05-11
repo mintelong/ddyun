@@ -9,6 +9,7 @@ class CompanyContact {
 	String officer
 	String email
 	Date date
+	CompanyCulture companyId;
 
     static constraints = {
 		tel nullable: true
@@ -16,5 +17,6 @@ class CompanyContact {
 		officer nullable: true
 		email nullable: true
 		date nullable: true
+		companyId(blank : false)
     }
 }

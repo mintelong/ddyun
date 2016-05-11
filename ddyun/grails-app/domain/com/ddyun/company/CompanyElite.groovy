@@ -11,6 +11,7 @@ class CompanyElite {
 	String longResume;
 	String logo;
 	Date date;
+	CompanyCulture companyId;
 
     static constraints = {
 		name nullable: true
@@ -20,5 +21,6 @@ class CompanyElite {
 		longResume nullable: true
 		logo nullable: true
 		date nullable: true
+		companyId(blank : false)
     }
 }
