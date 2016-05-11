@@ -19,4 +19,8 @@ class CompanyCulture {
 		
 		member nullable: true
     }
+	
+	String toString() {
+		return this.companyName //+ " - " + this.spType + " - " + this.country
+	}
 }

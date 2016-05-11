@@ -14,7 +14,7 @@ dataSource {
 	pooled = false
 	driverClassName = "com.mysql.jdbc.Driver"
 	username = "root"
-	password = "csstsari"
+	password = "123456"
 }
 
 // environment specific settings
@@ -22,7 +22,7 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://139.196.197.45:3306/ddyundevdb?useUnicode=true&characterEncoding=UTF-8"
+            url = "jdbc:mysql://localhost:3306/ddyundevdb?useUnicode=true&characterEncoding=UTF-8"
 			//url = "jdbc:mysql://localhost:3306/ddyundevdb?useUnicode=true&characterEncoding=UTF-8"
         }
     }

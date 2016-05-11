@@ -39,9 +39,11 @@ class CompanyCaseController {
 		
 		String name = request.getParameter("name")
 		String describe = request.getParameter("describe")
+		String url = request.getParameter("url")
 		
         CompanyCase companyCaseInstance = new CompanyCase()
 		companyCaseInstance.name = name
+		companyCaseInstance.url = url
 		companyCaseInstance.description = describe
 		companyCaseInstance.date = new Date()
 		companyCaseInstance.member = member
