@@ -1,10 +1,9 @@
 package com.ddyun.company
 
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 import org.springframework.web.multipart.MultipartFile
+import com.ddyun.common.FileHandle
 
 @Transactional(readOnly = true)
 class CompanyProductController {

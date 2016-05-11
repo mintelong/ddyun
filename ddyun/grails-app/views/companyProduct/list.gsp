@@ -75,7 +75,7 @@
 	                        	<td>${company.name}</td>
 	                        	<td>${company.title}</td>
 	                        	<td>${company.price}</td>
-	                            <td><img src="/ddyun/ddyunimg/${companyCase.logo}" width="40" height="40"/></td>
+	                            <td><img src="/ddyun/ddyunimg/${company.logo}" width="40" height="40"/></td>
 	                            <td><g:formatDate date="${company.date}" format="yyyy-MM-dd HH:mm:ss"/></td>
 	                            <td><g:link controller="companyProduct" action="delete" params='[id:"${company.id}"]'>删除</g:link></td>
                         	</tr>
