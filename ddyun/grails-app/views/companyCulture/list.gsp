@@ -54,7 +54,7 @@
     <div class="col-md-9">
     	<div class="CopCul_cont">
         	<div class="line2">
-            	<g:link controller="companyContact" action="create"><span>添加</span></g:link>
+            	<g:link controller="companyCulture" action="create"><span>添加</span></g:link>
             </div>
             <div class="PerRel_myinfo">
             	<table class="table table-bordered">
