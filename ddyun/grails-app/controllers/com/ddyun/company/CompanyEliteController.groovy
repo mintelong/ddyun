@@ -132,7 +132,7 @@ class CompanyEliteController {
 	
 	def list() {
 		
-		List<CompanyCulture> lists = CompanyCulture.list()
+		List<CompanyElite> lists = CompanyElite.list()
 		
 		render view:"list",model:[lists:lists]
 	}
