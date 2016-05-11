@@ -1,5 +1,8 @@
 package com.ddyun.security
 
+import com.ddyun.company.*
+import com.ddyun.rocf.*
+
 class Member implements Serializable {
 
 	private static final long serialVersionUID = 1
@@ -12,6 +15,19 @@ class Member implements Serializable {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+	
+	static hasMany = [companycases:CompanyCase,
+					  companycontacts:CompanyContact,
+					  companycultures:CompanyCulture,
+					  companyelites:CompanyElite,
+					  companynews:CompanyNews,
+					  companyproducts:CompanyProduct,
+					  rocfcontacts:RocfContact,
+					  rocfcultures:RocfCulture,
+					  rocfleaders:RocfLeader,
+					  rocfnews:RocfNews,
+					  rocfwords:RocfWord
+					  ]
 
 	Member(String username, String password) {
 		this()
@@ -57,6 +73,19 @@ class Member implements Serializable {
 	static constraints = {
 		username blank: false, unique: true
 		password blank: false
+		
+		companycases nullable: true
+		companycontacts nullable: true
+		companycultures nullable: true
+		companyelites nullable: true
+		companynews nullable: true
+		companyproducts nullable: true
+		
+		rocfcontacts nullable: true
+		rocfcultures nullable: true
+		rocfleaders nullable: true
+		rocfnews nullable: true
+		rocfwords nullable: true
 	}
 
 	static mapping = {

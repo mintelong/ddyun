@@ -3,10 +3,13 @@ package com.ddyun.rocf
 
 
 import static org.springframework.http.HttpStatus.*
+import com.ddyun.security.Member
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class RocfContactController {
+	
+	def springSecurityService
 
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -27,6 +30,10 @@ class RocfContactController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String tel = request.getParameter("tel")
 		String address = request.getParameter("address")
 		String officer = request.getParameter("officer")
@@ -38,6 +45,7 @@ class RocfContactController {
 		rocfContactInstance.officer = officer
 		rocfContactInstance.email = email
 		rocfContactInstance.date = new Date()
+		rocfContactInstance.member = member
 		
         if (rocfContactInstance == null) {
             notFound()

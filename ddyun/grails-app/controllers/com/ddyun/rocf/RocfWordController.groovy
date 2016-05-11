@@ -3,11 +3,14 @@ package com.ddyun.rocf
 
 
 import static org.springframework.http.HttpStatus.*
+import com.ddyun.security.Member
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class RocfWordController {
 
+	def springSecurityService
+	
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
@@ -27,12 +30,18 @@ class RocfWordController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String title = request.getParameter("title")
 		String content = request.getParameter("content")
 		
 		RocfWord rocfWordInstance = new RocfWord()
 		rocfWordInstance.title = title
 		rocfWordInstance.content = content
+		rocfWordInstance.date = new Date()
+		rocfWordInstance.member = member
 		
         if (rocfWordInstance == null) {
             notFound()

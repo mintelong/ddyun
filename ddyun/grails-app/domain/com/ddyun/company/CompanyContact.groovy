@@ -1,5 +1,6 @@
 package com.ddyun.company
 
+import com.ddyun.security.Member
 import java.util.Date;
 
 class CompanyContact {
@@ -9,6 +10,8 @@ class CompanyContact {
 	String officer
 	String email
 	Date date
+	
+	static belongsTo = [member:Member]
 
     static constraints = {
 		tel nullable: true
@@ -16,5 +19,7 @@ class CompanyContact {
 		officer nullable: true
 		email nullable: true
 		date nullable: true
+		
+		member nullable: true
     }
 }

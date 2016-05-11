@@ -3,10 +3,13 @@ package com.ddyun.rocf
 
 
 import static org.springframework.http.HttpStatus.*
+import com.ddyun.security.Member
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class RocfCultureController {
+	
+	def springSecurityService
 
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -25,6 +28,10 @@ class RocfCultureController {
 
     @Transactional
     def save() {
+		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 				
 		String title = request.getParameter("title")
 		String content = request.getParameter("content")
@@ -33,6 +40,7 @@ class RocfCultureController {
 		rocfCultureInstance.title = title
 		rocfCultureInstance.content = content
 		rocfCultureInstance.date = new Date()
+		rocfCultureInstance.member = member
 		
         if (rocfCultureInstance == null) {
             notFound()

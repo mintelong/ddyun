@@ -4,9 +4,12 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 import org.springframework.web.multipart.MultipartFile
 import com.ddyun.common.FileHandle
+import com.ddyun.security.Member
 
 @Transactional(readOnly = true)
 class CompanyNewsController {
+	
+	def springSecurityService
 
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -27,6 +30,10 @@ class CompanyNewsController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String title = request.getParameter("title")
 		String content = request.getParameter("content")
 		
@@ -34,6 +41,7 @@ class CompanyNewsController {
 		companyNewsInstance.title = title
 		companyNewsInstance.content = content
 		companyNewsInstance.date = new Date()
+		companyNewsInstance.member = member
 			
         if (companyNewsInstance == null) {
             notFound()

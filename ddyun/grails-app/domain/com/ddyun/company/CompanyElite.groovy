@@ -1,6 +1,7 @@
 package com.ddyun.company
 
 import java.util.Date;
+import com.ddyun.security.Member
 
 class CompanyElite {
 	
@@ -11,6 +12,8 @@ class CompanyElite {
 	String longResume;
 	String logo;
 	Date date;
+	
+	static belongsTo = [member:Member]
 
     static constraints = {
 		name nullable: true
@@ -20,5 +23,7 @@ class CompanyElite {
 		longResume nullable: true
 		logo nullable: true
 		date nullable: true
+		
+		member nullable: true
     }
 }

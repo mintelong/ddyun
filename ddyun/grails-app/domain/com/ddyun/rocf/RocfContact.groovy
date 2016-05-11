@@ -1,6 +1,7 @@
 package com.ddyun.rocf
 
 import java.util.Date;
+import com.ddyun.security.Member
 
 class RocfContact {
 	
@@ -9,6 +10,8 @@ class RocfContact {
 	String officer;
 	String email;
 	Date date;
+	
+	static belongsTo = [member:Member]
 
     static constraints = {
 		tel nullable: true
@@ -16,5 +19,7 @@ class RocfContact {
 		officer nullable: true
 		email nullable: true
 		date nullable: true
+		
+		member nullable: true
     }
 }

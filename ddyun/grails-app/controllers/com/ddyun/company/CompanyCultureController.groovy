@@ -3,10 +3,13 @@ package com.ddyun.company
 
 
 import static org.springframework.http.HttpStatus.*
+import com.ddyun.security.Member
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class CompanyCultureController {
+	
+	def springSecurityService
 
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
@@ -27,6 +30,10 @@ class CompanyCultureController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String companyName = request.getParameter("companyName")
 		String companyTitle = request.getParameter("companyTitle")
 		String companyCultureContent = request.getParameter("companyCultureContent")
@@ -36,6 +43,7 @@ class CompanyCultureController {
 		companyCultureInstance.companyTitle = companyTitle
 		companyCultureInstance.companyCultureContent = companyCultureContent
 		companyCultureInstance.date = new Date()
+		companyCultureInstance.member = member
 		
         if (companyCultureInstance == null) {
             notFound()

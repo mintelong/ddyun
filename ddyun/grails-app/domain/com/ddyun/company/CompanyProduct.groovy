@@ -1,5 +1,7 @@
 package com.ddyun.company
 
+import com.ddyun.security.Member
+
 class CompanyProduct {
 	
 	String name;
@@ -7,6 +9,8 @@ class CompanyProduct {
 	String logo;
 	double price;
 	Date date;
+	
+	static belongsTo = [member:Member]
 
     static constraints = {
 		name nullable: true
@@ -14,5 +18,7 @@ class CompanyProduct {
 		logo nullable: true
 		price nullable: true
 		date nullable: true
+		
+		member nullable: true
     }
 }

@@ -5,11 +5,14 @@ import static org.springframework.http.HttpStatus.*
 import java.util.Date;
 import org.springframework.web.multipart.MultipartFile
 import com.ddyun.common.FileHandle
+import com.ddyun.security.Member
 
 import grails.transaction.Transactional
 
 @Transactional(readOnly = false)
 class CompanyCaseController {
+	
+	def springSecurityService
 
    // static allowedMethods = [save: "POST", delete: "DELETE"]
 
@@ -30,6 +33,10 @@ class CompanyCaseController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String name = request.getParameter("name")
 		String describe = request.getParameter("describe")
 		
@@ -37,6 +44,7 @@ class CompanyCaseController {
 		companyCaseInstance.name = name
 		companyCaseInstance.description = describe
 		companyCaseInstance.date = new Date()
+		companyCaseInstance.member = member
 		
 		MultipartFile logo = request.getFile("logo")
 		

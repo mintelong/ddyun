@@ -4,10 +4,13 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 import org.springframework.web.multipart.MultipartFile
 import com.ddyun.common.FileHandle
+import com.ddyun.security.Member
 
 @Transactional(readOnly = true)
 class RocfLeaderController {
 
+	def springSecurityService
+	
     //static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
@@ -26,6 +29,10 @@ class RocfLeaderController {
     @Transactional
     def save() {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
 		String name = request.getParameter("name")
 		String englishName = request.getParameter("englishName")
 		String title = request.getParameter("title")
@@ -39,6 +46,7 @@ class RocfLeaderController {
 		rocfLeaderInstance.shortResume = shortResume
 		rocfLeaderInstance.longResume = longResume
 		rocfLeaderInstance.date = new Date()
+		rocfLeaderInstance.member = member
 		
 		
         if (rocfLeaderInstance == null) {
