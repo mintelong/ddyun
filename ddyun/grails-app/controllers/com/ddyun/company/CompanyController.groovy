@@ -58,8 +58,10 @@ class CompanyController {
 	}
 	
 	def companycase() {
+		List<CompanyCase> lists = CompanyCase.list()
 		
-		render view:'companycase',model:[]
+		render view:'companycase',model:[lists:lists]
+		
 	}
 	
 	def companyconnect() {
@@ -83,5 +85,8 @@ class CompanyController {
 		render view:'companywork',model:[]
 	}
 	
-	
+	def companyproduct() {
+		
+		render view:'companyproduct',model:[]
+	}
 }

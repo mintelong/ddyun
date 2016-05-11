@@ -79,6 +79,17 @@
             <!--产品列表 开始-->
             <div class="ComCase_box">
             	<ul>
+            	<g:each in="${lists}" var="companyCase">
+            	<li>
+            	
+                        <div class="ComCase_cont">
+                        	<a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
+                        	<img src="${companyCase.logo}">
+                        	</a>
+                        </div>
+                    </li>
+                   </g:each> 
+            	
                 	<!--循环li 最多12个多的分页 开始-->
                     <li>
                         <div class="ComCase_cont">
