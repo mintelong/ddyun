@@ -120,8 +120,12 @@ class CompanyContactController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<CompanyContact> lists = CompanyContact.list()
+		//List<CompanyContact> lists = CompanyContact.list()
+		List<CompanyContact> lists = member.companycontacts
 		
 		render view:"list",model:[lists:lists]
 	}

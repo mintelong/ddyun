@@ -115,8 +115,12 @@ class RocfCultureController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<RocfCulture> lists = RocfCulture.list()
+		//List<RocfCulture> lists = RocfCulture.list()
+		List<RocfCulture> lists = member.rocfcultures
 		
 		render view:"list",model:[lists:lists]
 	}

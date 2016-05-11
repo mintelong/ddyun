@@ -134,8 +134,12 @@ class CompanyProductController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<CompanyProduct> lists = CompanyProduct.list()
+		//List<CompanyProduct> lists = CompanyProduct.list()
+		List<CompanyProduct> lists = member.companyproducts
 		
 		render view:"list",model:[lists:lists]
 	}

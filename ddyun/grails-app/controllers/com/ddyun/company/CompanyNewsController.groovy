@@ -132,8 +132,12 @@ class CompanyNewsController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<CompanyNews> lists = CompanyNews.list()
+		//List<CompanyNews> lists = CompanyNews.list()
+		List<CompanyNews> lists = member.companynews
 		
 		render view:"list",model:[lists:lists]
 	}

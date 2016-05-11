@@ -117,8 +117,12 @@ class RocfWordController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<RocfWord> lists = RocfWord.list()
+		//List<RocfWord> lists = RocfWord.list()
+		List<RocfWord> lists = member.rocfwords
 		
 		render view:"list",model:[lists:lists]
 	}

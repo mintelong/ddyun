@@ -138,8 +138,12 @@ class CompanyEliteController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<CompanyElite> lists = CompanyElite.list()
+		//List<CompanyElite> lists = CompanyElite.list()
+		List<CompanyElite> lists = member.companyelites
 		
 		render view:"list",model:[lists:lists]
 	}

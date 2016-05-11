@@ -138,8 +138,12 @@ class RocfLeaderController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<RocfLeader> lists = RocfLeader.list()
+		//List<RocfLeader> lists = RocfLeader.list()
+		List<RocfLeader> lists = member.rocfleaders
 		
 		render view:"list",model:[lists:lists]
 	}

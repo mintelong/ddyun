@@ -129,7 +129,12 @@ class CompanyCaseController {
 	
 	def list() {
 		
-		List<CompanyCase> lists = CompanyCase.list()
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
+		//List<CompanyCase> lists = CompanyCase.list()
+		List<CompanyCase> lists = member.companycases
 		
 		render view:"list",model:[lists:lists]
 	}

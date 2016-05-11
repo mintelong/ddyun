@@ -118,8 +118,12 @@ class CompanyCultureController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<CompanyCulture> lists = CompanyCulture.list()
+		//List<CompanyCulture> lists = CompanyCulture.list()
+		List<CompanyCulture> lists = member.companycultures
 		
 		render view:"list",model:[lists:lists]
 	}

@@ -132,8 +132,12 @@ class RocfNewsController {
     }
 	
 	def list() {
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
 		
-		List<RocfNews> lists = RocfNews.list()
+		//List<RocfNews> lists = RocfNews.list()
+		List<RocfNews> lists = member.rocfnews
 		
 		render view:"list",model:[lists:lists]
 	}
