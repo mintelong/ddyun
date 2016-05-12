@@ -125,7 +125,7 @@ class RocfContactController {
 		Member member = (Member)user
 		
 		//List<RocfContact> lists = RocfContact.list()
-		List<RocfContact> lists = member.rocfcontacts
+		Set<RocfContact> lists = member.rocfcontacts
 		
 		render view:"list",model:[lists:lists]
 	}

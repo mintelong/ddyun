@@ -137,7 +137,7 @@ class CompanyNewsController {
 		Member member = (Member)user
 		
 		//List<CompanyNews> lists = CompanyNews.list()
-		List<CompanyNews> lists = member.companynews
+		Set<CompanyNews> lists = member.companynews
 		
 		render view:"list",model:[lists:lists]
 	}

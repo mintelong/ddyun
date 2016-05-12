@@ -123,7 +123,7 @@ class CompanyCultureController {
 		Member member = (Member)user
 		
 		//List<CompanyCulture> lists = CompanyCulture.list()
-		List<CompanyCulture> lists = member.companycultures
+		Set<CompanyCulture> lists = member.companycultures
 		
 		render view:"list",model:[lists:lists]
 	}

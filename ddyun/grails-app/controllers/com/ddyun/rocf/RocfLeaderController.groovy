@@ -143,7 +143,7 @@ class RocfLeaderController {
 		Member member = (Member)user
 		
 		//List<RocfLeader> lists = RocfLeader.list()
-		List<RocfLeader> lists = member.rocfleaders
+		Set<RocfLeader> lists = member.rocfleaders
 		
 		render view:"list",model:[lists:lists]
 	}

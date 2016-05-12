@@ -19,6 +19,6 @@ class CompanyNews {
 		date nullable: true
 		
 		member nullable: true
-		companyId(blank : false)
+		companyId nullable: true
     }
 }

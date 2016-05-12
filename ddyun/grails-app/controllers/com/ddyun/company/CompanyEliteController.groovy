@@ -143,7 +143,7 @@ class CompanyEliteController {
 		Member member = (Member)user
 		
 		//List<CompanyElite> lists = CompanyElite.list()
-		List<CompanyElite> lists = member.companyelites
+		Set<CompanyElite> lists = member.companyelites
 		
 		render view:"list",model:[lists:lists]
 	}

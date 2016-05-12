@@ -134,7 +134,7 @@ class CompanyCaseController {
 		Member member = (Member)user
 		
 		//List<CompanyCase> lists = CompanyCase.list()
-		List<CompanyCase> lists = member.companycases
+		Set<CompanyCase> lists = member.companycases
 		
 		render view:"list",model:[lists:lists]
 	}

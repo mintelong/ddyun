@@ -125,7 +125,7 @@ class CompanyContactController {
 		Member member = (Member)user
 		
 		//List<CompanyContact> lists = CompanyContact.list()
-		List<CompanyContact> lists = member.companycontacts
+		Set<CompanyContact> lists = member.companycontacts
 		
 		render view:"list",model:[lists:lists]
 	}

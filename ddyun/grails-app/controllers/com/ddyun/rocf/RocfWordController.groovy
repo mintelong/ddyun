@@ -122,7 +122,7 @@ class RocfWordController {
 		Member member = (Member)user
 		
 		//List<RocfWord> lists = RocfWord.list()
-		List<RocfWord> lists = member.rocfwords
+		Set<RocfWord> lists = member.rocfwords
 		
 		render view:"list",model:[lists:lists]
 	}

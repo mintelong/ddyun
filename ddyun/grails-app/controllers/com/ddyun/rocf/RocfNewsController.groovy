@@ -137,7 +137,7 @@ class RocfNewsController {
 		Member member = (Member)user
 		
 		//List<RocfNews> lists = RocfNews.list()
-		List<RocfNews> lists = member.rocfnews
+		Set<RocfNews> lists = member.rocfnews
 		
 		render view:"list",model:[lists:lists]
 	}

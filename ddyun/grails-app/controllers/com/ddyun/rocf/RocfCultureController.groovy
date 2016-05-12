@@ -120,7 +120,7 @@ class RocfCultureController {
 		Member member = (Member)user
 		
 		//List<RocfCulture> lists = RocfCulture.list()
-		List<RocfCulture> lists = member.rocfcultures
+		Set<RocfCulture> lists = member.rocfcultures
 		
 		render view:"list",model:[lists:lists]
 	}
