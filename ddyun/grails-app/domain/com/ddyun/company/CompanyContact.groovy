@@ -12,7 +12,6 @@ class CompanyContact {
 	Date date
 	
 	static belongsTo = [member:Member]
-	CompanyCulture companyId;
 
     static constraints = {
 		tel nullable: true
