@@ -125,7 +125,14 @@ class RocfContactController {
 		Member member = (Member)user
 		
 		//List<RocfContact> lists = RocfContact.list()
-		Set<RocfContact> lists = member.rocfcontacts
+		//Set<RocfContact> lists = member.rocfcontacts
+		
+		Set<RocfContact> lists = null
+		if(member.username.equals("admin")){
+			lists = RocfContact.list()
+		}else{
+			lists = member.rocfcontacts
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

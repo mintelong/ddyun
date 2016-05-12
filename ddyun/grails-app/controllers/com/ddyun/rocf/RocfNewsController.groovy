@@ -137,7 +137,14 @@ class RocfNewsController {
 		Member member = (Member)user
 		
 		//List<RocfNews> lists = RocfNews.list()
-		Set<RocfNews> lists = member.rocfnews
+		//Set<RocfNews> lists = member.rocfnews
+		
+		Set<RocfNews> lists = null
+		if(member.username.equals("admin")){
+			lists = RocfNews.list()
+		}else{
+			lists = member.rocfnews
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

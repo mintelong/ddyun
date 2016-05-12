@@ -133,8 +133,12 @@ class CompanyCaseController {
 		def user = springSecurityService.getCurrentUser()
 		Member member = (Member)user
 		
-		//List<CompanyCase> lists = CompanyCase.list()
-		Set<CompanyCase> lists = member.companycases
+		Set<CompanyCase> lists = null
+		if(member.username.equals("admin")){
+			lists = CompanyCase.list()
+		}else{
+			lists = member.companycases
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

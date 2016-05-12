@@ -125,7 +125,14 @@ class CompanyContactController {
 		Member member = (Member)user
 		
 		//List<CompanyContact> lists = CompanyContact.list()
-		Set<CompanyContact> lists = member.companycontacts
+		//Set<CompanyContact> lists = member.companycontacts
+		
+		Set<CompanyContact> lists = null
+		if(member.username.equals("admin")){
+			lists = CompanyContact.list()
+		}else{
+			lists = member.companycontacts
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

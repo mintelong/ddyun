@@ -137,7 +137,14 @@ class CompanyNewsController {
 		Member member = (Member)user
 		
 		//List<CompanyNews> lists = CompanyNews.list()
-		Set<CompanyNews> lists = member.companynews
+		//Set<CompanyNews> lists = member.companynews
+		
+		Set<CompanyNews> lists = null
+		if(member.username.equals("admin")){
+			lists = CompanyNews.list()
+		}else{
+			lists = member.companynews
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

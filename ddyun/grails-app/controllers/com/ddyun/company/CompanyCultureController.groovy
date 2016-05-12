@@ -131,7 +131,14 @@ class CompanyCultureController {
 		Member member = (Member)user
 		
 		//List<CompanyCulture> lists = CompanyCulture.list()
-		Set<CompanyCulture> lists = member.companycultures
+		//Set<CompanyCulture> lists = member.companycultures
+		
+		Set<CompanyCulture> lists = null
+		if(member.username.equals("admin")){
+			lists = CompanyCulture.list()
+		}else{
+			lists = member.companycultures
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

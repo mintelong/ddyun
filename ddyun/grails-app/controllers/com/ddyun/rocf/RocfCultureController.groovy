@@ -120,7 +120,14 @@ class RocfCultureController {
 		Member member = (Member)user
 		
 		//List<RocfCulture> lists = RocfCulture.list()
-		Set<RocfCulture> lists = member.rocfcultures
+		//Set<RocfCulture> lists = member.rocfcultures
+		
+		Set<RocfCulture> lists = null
+		if(member.username.equals("admin")){
+			lists = RocfCulture.list()
+		}else{
+			lists = member.rocfcultures
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

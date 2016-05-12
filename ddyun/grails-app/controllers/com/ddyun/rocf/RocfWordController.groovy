@@ -122,7 +122,14 @@ class RocfWordController {
 		Member member = (Member)user
 		
 		//List<RocfWord> lists = RocfWord.list()
-		Set<RocfWord> lists = member.rocfwords
+		//Set<RocfWord> lists = member.rocfwords
+		
+		Set<RocfWord> lists = null
+		if(member.username.equals("admin")){
+			lists = RocfWord.list()
+		}else{
+			lists = member.rocfwords
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

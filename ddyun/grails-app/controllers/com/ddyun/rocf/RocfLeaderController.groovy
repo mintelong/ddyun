@@ -143,7 +143,14 @@ class RocfLeaderController {
 		Member member = (Member)user
 		
 		//List<RocfLeader> lists = RocfLeader.list()
-		Set<RocfLeader> lists = member.rocfleaders
+		//Set<RocfLeader> lists = member.rocfleaders
+		
+		Set<RocfLeader> lists = null
+		if(member.username.equals("admin")){
+			lists = RocfLeader.list()
+		}else{
+			lists = member.rocfleaders
+		}
 		
 		render view:"list",model:[lists:lists]
 	}

@@ -143,7 +143,14 @@ class CompanyEliteController {
 		Member member = (Member)user
 		
 		//List<CompanyElite> lists = CompanyElite.list()
-		Set<CompanyElite> lists = member.companyelites
+		//Set<CompanyElite> lists = member.companyelites
+		
+		Set<CompanyElite> lists = null
+		if(member.username.equals("admin")){
+			lists = CompanyElite.list()
+		}else{
+			lists = member.companyelites
+		}
 		
 		render view:"list",model:[lists:lists]
 	}
