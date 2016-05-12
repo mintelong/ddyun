@@ -84,41 +84,13 @@
             	
                         <div class="ComCase_cont">
                         	<a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
-                        	<img src="${companyCase.logo}">
+                        	<img src="/ddyun/ddyunimg/${companyCase.logo}">
                         	</a>
                         </div>
                     </li>
                    </g:each> 
             	
-                	<!--循环li 最多12个多的分页 开始-->
-                    <li>
-                        <div class="ComCase_cont">
-                        	<a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
-                        	<img src="../images/专精特新领军企业.jpg">
-                        	</a>
-                        </div>
-                    </li>
-                    <!--循环li 最多12个多的分页 结束-->
-                    
-                    <!--例 删除 开始-->
-                    <li>
-                        <div class="ComCase_cont">
-                           <a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
-                      
-                        	<img src="../images/上海博物馆藏国之魂宝牺尊.jpg">
-                        	</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ComCase_cont">
-                           <a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
-                      
-                        	<img src="../images/温馨塘桥宜居生活.jpg">
-                        	</a>
-                        </div>
-                    </li>
-                    
-                    <!--例 删除 结束-->
+                	
                 </ul>
             </div>
             <!--产品列表 结束-->
