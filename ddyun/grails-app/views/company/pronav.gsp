@@ -39,7 +39,9 @@
                 	<!--循环li 最多12个多的分页 开始-->
                     <li>
                         <div class="ProNav_cont">
-                       	 <img src="../images/temp/case2.png">
+                        <a href="/ddyun/company/product">
+                       	 <img src="../images/上海博物馆藏国之魂宝牺尊.jpg">
+                       	  </a>
                         </div>
                     </li>
                     
