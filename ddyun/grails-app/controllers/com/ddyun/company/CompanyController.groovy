@@ -43,8 +43,8 @@ class CompanyController {
 	}
 	
 	def law2() {
-		
-		render view:'law2',model:[]
+		def companyList = CompanyCulture.list()
+		render view:'law2',model:[companyList:companyList]
 	}
 	
 	def pronav() {

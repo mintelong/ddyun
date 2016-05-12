@@ -63,6 +63,7 @@
                         	<th>企业名称</th>
                         	<th>企业文化标题</th>
                             <th>企业文化内容</th>
+                            <th>企业图片</th>
                             <th>添加日期</th>
                             <th>操作</th>
                         </tr>
@@ -74,6 +75,7 @@
 	                        	<td>${company.companyName}</td>
 	                        	<td>${company.companyTitle}</td>
 	                            <td>${company.companyCultureContent}</td>
+	                            <td><img src="/ddyun/ddyunimg/${company.logo}" width="40" height="40"/></td>
 	                            <td><g:formatDate date="${company.date}" format="yyyy-MM-dd HH:mm:ss"/></td>
 	                            <td><g:link controller="companyCulture" action="delete" params='[id:"${company.id}"]'>删除</g:link></td>
                         	</tr>

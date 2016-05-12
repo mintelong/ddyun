@@ -8,6 +8,7 @@ class CompanyCulture {
 	String companyTitle;
 	String companyCultureContent;
 	Date date;
+	String logo;
 	
 	static belongsTo = [member:Member]
 	

@@ -5,6 +5,8 @@ package com.ddyun.company
 import static org.springframework.http.HttpStatus.*
 import com.ddyun.security.Member
 import grails.transaction.Transactional
+import org.springframework.web.multipart.MultipartFile
+import com.ddyun.common.FileHandle
 
 @Transactional(readOnly = true)
 class CompanyCultureController {
@@ -45,15 +47,21 @@ class CompanyCultureController {
 		companyCultureInstance.date = new Date()
 		companyCultureInstance.member = member
 		
-        if (companyCultureInstance == null) {
-            notFound()
-            return
-        }
-
-        if (companyCultureInstance.hasErrors()) {
-            respond companyCultureInstance.errors, view:'create'
-            return
-        }
+        MultipartFile logo = request.getFile("logo")
+		
+		def rootPath = request.getSession().getServletContext().getRealPath("/")
+		
+		if(logo&&!logo.isEmpty()) {
+			def userDir = new File(rootPath + "ddyunimg" ,"/")
+//			def userDir = new File(propertiesService.catchNewsImgUploadPath() ,"/")
+			userDir.mkdirs()
+			String filenameExt=FileHandle.getFilenameExtention(logo.getOriginalFilename())
+			String newFilename=String.format("%tY%<tm%<td%<tH%<tM%<tS", new Date()) +"_" + (new Random().nextInt(1000))+"." + filenameExt
+			logo.transferTo( new File(userDir, newFilename))
+			companyCultureInstance.logo = newFilename
+		}else{
+			companyCultureInstance.logo = "default.jpg"
+		}
 
         companyCultureInstance.save flush:true
 

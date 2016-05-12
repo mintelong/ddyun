@@ -1,3 +1,4 @@
+<%@ page import="com.ddyun.company.CompanyCulture" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,8 +63,10 @@
             <div class="Coplaw_top">
                 <div class="Coplaw_tab">
                 	<ul>
+                	<!-- 
                     	<li class="on"><a href="/ddyun/company/law">企业模式</a></li>
                         <li><a href="/ddyun/company/law2">数据模式</a></li>
+                         -->
                     </ul>
                 </div>
                 <div class="Coplaw_search">
@@ -86,16 +89,17 @@
             <div class="CoplawT_info" id="list_one">
             	<ul>
                 	<!--循环li 开始-->
+                <g:each in="${companyList}" var="company">
                     <li>
                     	<a href="#">
-                        <div class="CoplawT_img"><img class="Pimg_hover" src="${resource(dir:'images',file:'专精特新领军企业.jpg')}"/></div>
+                        <div class="CoplawT_img"><img class="Pimg_hover" src="/ddyun/ddyunimg/${company.logo}"/></div>
                         <div class="CoplawT_text">
-                        	<h3>上海大度云计算科技有限公司</h3>
-                            <p>主要经营云计算、大数据为主的IT集成化解决方案</p>
+                        	<h3>${company.companyName}</h3>
+                            <p>${company.companyTitle}</p>
                         </div>
                         </a>
                     </li>
-                   
+                  </g:each>
                 </ul>
             </div>
             <!--详情1 结束-->

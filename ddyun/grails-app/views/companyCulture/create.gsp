@@ -62,6 +62,11 @@
 			                        </span>
 			                    </li>
 			                    <li>
+			                        <span><i class="Required">*</i>公司头像：：
+			                        	<input type="file" name="logo" id="logo" value="">
+			                        </span>        
+			                    </li>
+			                    <li>
 			                        <span><i class="Required">*</i>文化内容：
 			                        	<textarea rows="30" cols="30" name="companyCultureContent" id="companyCultureContent"></textarea>
 			                        </span>        
