@@ -11,7 +11,6 @@ class CompanyProduct {
 	Date date;
 	
 	static belongsTo = [member:Member]
-	CompanyCulture companyId;
 
     static constraints = {
 		name nullable: true
@@ -21,6 +20,5 @@ class CompanyProduct {
 		date nullable: true
 		
 		member nullable: true
-		companyId nullable: true
     }
 }

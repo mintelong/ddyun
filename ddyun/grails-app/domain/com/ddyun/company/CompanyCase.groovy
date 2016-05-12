@@ -11,7 +11,6 @@ class CompanyCase {
 	Date date
 	
 	static belongsTo = [member:Member]
-	CompanyCulture companyId;
 
     static constraints = {
 		name nullable: true
@@ -21,6 +20,5 @@ class CompanyCase {
 		date nullable: true
 		
 		member nullable: true
-		companyId nullable: true
     }
 }

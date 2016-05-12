@@ -22,6 +22,5 @@ class CompanyContact {
 		date nullable: true
 		
 		member nullable: true
-		companyId nullable: true
     }
 }
