@@ -36,8 +36,9 @@
                 <!--新闻列表 开始-->
                 <div class="Ireal_text">
                 	<ul>
-                    	<li><a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch="><p><i></i>上海大度云计算入驻本平台</p><span>04-10</span></a></li>
-                    	<li><a href="http://139.196.197.45:8080/hscsp/"><p><i></i>侨联大数据核心服务平台入驻</p><span>04-15</span></a></li>
+                	<g:each in="${newsList}" var="news">
+                    	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
+                    </g:each>
                     </ul>
                 </div>
                 <!--新闻列表 结束-->
@@ -53,7 +54,7 @@
         	<li><a href="/ddyun/company/law2"><i class="qicont"></i><p>企业导航</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>智囊库</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>资料下载</p></a></li>
-            <li><a href=".html"><i class="qicont"></i><p>中国侨联</p></a></li>
+            <li><a href="/ddyun/index/rocfculture"><i class="qicont"></i><p>中国侨联</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>常用工具</p></a></li>
         </ul>
     </div>
@@ -74,7 +75,7 @@
 	<!--产品展示 开始-->
     <div class="Ishow_box">
     	<!--标题 开始-->
-        <div class="Ishow_title"><a href="/ddyun/product/productList"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
+        <div class="Ishow_title"><a href="/ddyun/company/pronav"><span>MORE<i></i></span></a><h3>产品展示</h3></div>
         <!--标题 结束-->
         
         <!--产品图片 开始-->

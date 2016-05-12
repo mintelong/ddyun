@@ -1,8 +1,12 @@
 package com.ddyun.index
+import com.ddyun.company.CompanyNews
 
 class IndexController {
 
-    def index() { }
+    def index() {
+		def newsList = CompanyNews.list()
+		render view:"index",model:[newsList:newsList]
+	}
 	
 	//企业
 	//company_culture

@@ -65,9 +65,7 @@
 			                        	<input type="file" name="logo" id="logo" value="">
 			                        </span>        
 			                    </li>
-			                    <!--li>
-			                    	<g:select id="companyId" name="companyId" from="${com.ddyun.company.CompanyCulture.list()}" optionKey="id" required="" value="" class="many-to-one"/>
-			                    </li-->
+
 			                    <li><button onclick="submitForm()" class="btn btn-primary radius4">保存</button></li>
 			                </ul>
 			            </div>

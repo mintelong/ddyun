@@ -63,7 +63,6 @@
                         	<th>名称</th>
                         	<th>描述</th>
                             <th>图片</th>
-                            <th>所属公司</th>
                             <th>添加日期</th>
                             <th>操作</th>
                         </tr>
@@ -75,7 +74,6 @@
 	                        	<td>${companyCase.name}</td>
 	                        	<td>${companyCase.description}</td>
 	                            <td><img src="/ddyun/ddyunimg/${companyCase.logo}" width="40" height="40"/></td>
-	                            <td>${companyCase.companyId}</td>
 	                            <td><g:formatDate date="${companyCase.date}" format="yyyy-MM-dd HH:mm:ss"/></td>
 	                            <td><g:link controller="companyCase" action="delete" params='[id:"${companyCase.id}"]'>删除</g:link></td>
                         	</tr>
