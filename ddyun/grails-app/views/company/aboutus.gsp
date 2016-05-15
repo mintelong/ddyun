@@ -26,13 +26,13 @@
         <div class="CopCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd class="on"><a href="/ddyun/company/aboutus">企业文化</a></dd>
-                <dd><a href="/ddyun/company/companyelite">企业精英</a></dd>
-                <dd><a href="/ddyun/company/companyproduct">企业产品</a></dd>
-                <dd><a href="/ddyun/company/companycase">合作案例</a></dd>
-                <dd><a href="/ddyun/company/companywork">业务范围</a></dd>
+                <dd class="on"><a href="/ddyun/company/aboutus?uid=${user.id}">企业文化</a></dd>
+                <dd><a href="/ddyun/company/companyelite/list2">企业精英</a></dd>
+                <dd><a href="/ddyun/company/companyproduct/list2">企业产品</a></dd>
+                <dd><a href="/ddyun/company/companycase/list2">合作案例</a></dd>
+                <dd><a href="/ddyun/company/companywork/list2">业务范围</a></dd>
                 <dd><a href="/ddyun/company/companyconnect">联系我们</a></dd>
-                <dd><a href="/ddyun/company/companynews">最新消息</a></dd>
+                <dd><a href="/ddyun/company/companynews/list2">最新消息</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -71,16 +71,16 @@
     	<div class="CopCul_cont">
         	<!--标题 开始-->
             <div class="CopCul_title">
-                <a href="index.html">返回首页</a>
+                <a href="/ddyun">返回首页</a>
                 <h3>企业文化</h3>
             </div>
             <!--标题 结束-->
             
             <!--详情 开始-->
             <div class="CopCnect_box">
-            	<label>齐云大度  共创辉煌</label>
-                <p>		传统多媒体信息量是有局限的，在一个特定的时间、空间内传统多媒体信息量是有限的。但是，云计算--云多媒体智能系统在一个特定的时间、空间内，可以容纳无限大的信息量。可以说信息量越大，云多媒体的作用越大。可以说云多媒体智能系统就是一个图片和影像资料的搜索引擎，传统搜索引擎在处理无限量图片和影像资料时，只能单一和有限数量的处理材料。但是，云多媒体智能系统，可以在一个画面上高度密集地展现图片和影像画面，并且以相关内容形成，无限展示。这种无限相关搜索功能，可以广泛应用在政治、经济、科教文卫体各个领域。
-                大度云计算科技在此基础上开发的云多媒体高科技产品，得到了上海市有关领导及海内外的高度重视和关注。</p>         
+            	<label>${cc.companyTitle}</label>
+            	<img src="../ddyunimg/${cc.logo}" width="400" height="300" />
+                <p>${cc.companyCultureContent}</p>         
             </div>
            
             <!--详情 结束-->

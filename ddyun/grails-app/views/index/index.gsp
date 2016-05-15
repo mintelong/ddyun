@@ -112,8 +112,8 @@
         <div class="Inews_list" id="list_one">
         	<ul>
        			<g:each in="${newsList}" var="news">
-                	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
-                </g:each>
+                  	<li><a href="/ddyun/companyNews/detail?nid=${news.id}"><p><i></i>${news.title}</p></a></li>
+                  </g:each>
             </ul>
         </div>
         <!--新闻动态 结束-->
@@ -122,7 +122,7 @@
         <div class="Inews_list" id="list_two" style="display:none;">
         	<ul>
             	<g:each in="${newsList}" var="news">
-                 	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
+                 	<li><a href="/ddyun/companyNews/detail?nid=${news.id}"><p><i></i>${news.title}</p></a></li>
                  </g:each>
             </ul>
         </div>

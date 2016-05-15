@@ -31,12 +31,13 @@
         <div class="Coplaw_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd><a href=".html">法律</a></dd>
-                <dd class="on"><a href=".html"><i></i>国际法</a></dd>
-                <dd><a href=".html"><i></i>国内法</a></dd>
-                <dd><a href=".html">政府/非盈利机构</a></dd>
-                <dd><a href=".html">政府/非盈</a></dd>
-                <dd><a href=".html">政府</a></dd>
+                <dd><a href="#">法律法规</a></dd>
+                <dd class="on"><a href="#"><i></i>国际法</a></dd>
+                <dd><a href="#"><i></i>国内法</a></dd>
+                <dd><a href="#">企业</a></dd>
+                <dd><a href="#"><i></i>内资企业</a></dd>
+                <dd><a href="#"><i></i>外资企业</a></dd>
+                <dd><a href="#">民生</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -91,7 +92,7 @@
                 	<!--循环li 开始-->
                 <g:each in="${companyList}" var="company">
                     <li>
-                    	<a href="#">
+                    	<a href="/ddyun/company/aboutus?uid=${company.member.id }">
                         <div class="CoplawT_img"><img class="Pimg_hover" src="/ddyun/ddyunimg/${company.logo}"/></div>
                         <div class="CoplawT_text">
                         	<h3>${company.companyName}</h3>

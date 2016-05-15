@@ -1,6 +1,10 @@
 package com.ddyun.company
 
+import com.ddyun.security.Member
+
 class CompanyController {
+	
+	def springSecurityService
 
     def product() {
 		
@@ -53,8 +57,10 @@ class CompanyController {
 	}
 	
 	def aboutus() {
-		
-		render view:'aboutus',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		CompanyCulture cc = user.companycultures.getAt(0)
+		render view:'aboutus',model:[cc:cc,user:user]
 	}
 	
 	def companycase() {
