@@ -84,6 +84,12 @@ class CompanyNewsController {
     def edit(CompanyNews companyNewsInstance) {
         respond companyNewsInstance
     }
+	
+	def detail (){
+		String nid = params.nid
+		CompanyNews news = CompanyNews.get(nid)
+		render(view:"detail",model:[news:news])
+	}
 
     @Transactional
     def update(CompanyNews companyNewsInstance) {

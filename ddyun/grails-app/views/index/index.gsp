@@ -111,14 +111,9 @@
         <!--新闻动态 开始-->
         <div class="Inews_list" id="list_one">
         	<ul>
-       <!--循环li 8个 开始-->
-                <li><a href=".html"><p><i></i>中国侨联主席林军出席丙申年黄帝故里拜祖大典并担任主司仪</p></a></li>
-                <!--循环li 8个 结束-->
-                <li><a href=".html"><p><i></i>林军主席、乔卫副主席会见世界青年总裁组织北京峰会侨胞代表</p></a></li>
-                <li><a href=".html"><p><i></i>乔卫副主席为全国统战部长培训班做辅导报告</p></a></li>
-                <li><a href=".html"><p><i></i>林军主席在洛阳考察调研并为河南省首家新侨创新创业基地揭牌</p></a></li>
-                <li><a href=".html"><p><i></i>2016年上半年中国侨联法顾委主任会议在京召开</p></a></li>
-                <li><a href=".html"><p><i></i>中国侨联召开“两学一做”学习教育工作动员大会</p></a></li>
+       			<g:each in="${newsList}" var="news">
+                	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
+                </g:each>
             </ul>
         </div>
         <!--新闻动态 结束-->
@@ -126,14 +121,9 @@
         <!--需求时讯 开始-->
         <div class="Inews_list" id="list_two" style="display:none;">
         	<ul>
-            	<!--循环li 8个 开始-->
-                <li><a href=".html"><p><i></i>中国侨联主席林军出席丙申年黄帝故里拜祖大典并担任主司仪</p></a></li>
-                <!--循环li 8个 结束-->
-                <li><a href=".html"><p><i></i>林军主席、乔卫副主席会见世界青年总裁组织北京峰会侨胞代表</p></a></li>
-                <li><a href=".html"><p><i></i>乔卫副主席为全国统战部长培训班做辅导报告</p></a></li>
-                <li><a href=".html"><p><i></i>林军主席在洛阳考察调研并为河南省首家新侨创新创业基地揭牌</p></a></li>
-                <li><a href=".html"><p><i></i>2016年上半年中国侨联法顾委主任会议在京召开</p></a></li>
-                <li><a href=".html"><p><i></i>中国侨联召开“两学一做”学习教育工作动员大会</p></a></li>
+            	<g:each in="${newsList}" var="news">
+                 	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
+                 </g:each>
             </ul>
         </div>
         <!--需求时讯 结束-->
