@@ -63,6 +63,14 @@ class CompanyController {
 		render view:'aboutus',model:[cc:cc,user:user]
 	}
 	
+	def companycase2() {
+		def uid = params.uid
+		Member user = Member.get(uid)
+		def clist = user.companycases
+		render view:'companycase',model:[clist:clist,user:user]
+		
+	}
+	
 	def companycase() {
 		List<CompanyCase> lists = CompanyCase.list()
 		
@@ -71,8 +79,10 @@ class CompanyController {
 	}
 	
 	def companyconnect() {
-		
-		render view:'companyconnect',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		CompanyContact cc = user.companycontacts.getAt(0)
+		render view:'companyconnect',model:[cc:cc,user:user]
 	}
 	def companyelite() {
 		def uid = params.uid
@@ -94,7 +104,9 @@ class CompanyController {
 	}
 	
 	def companyproduct() {
-		
-		render view:'companyproduct',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		def plist = user.companyproducts
+		render view:'companyproduct',model:[plist:plist,user:user]
 	}
 }
