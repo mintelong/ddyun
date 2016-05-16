@@ -27,13 +27,13 @@
         <div class="CopCul_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-            	<dd><a href="/ddyun/company/aboutus">企业文化</a></dd>
-                <dd class="on"><a href="/ddyun/company/companyelite">企业精英</a></dd>
-                <dd><a href="/ddyun/company/companyproduct">企业产品</a></dd>
-                <dd><a href="/ddyun/company/companycase">合作案例</a></dd>
-                <dd><a href="/ddyun/company/companywork">业务范围</a></dd>
-                <dd><a href="/ddyun/company/companyconnect">联系我们</a></dd>
-                <dd><a href="/ddyun/company/companynews">最新消息</a></dd>
+            	<dd><a href="/ddyun/company/aboutus?uid=${user.id}">企业文化</a></dd>
+                <dd class="on"><a href="/ddyun/company/companyelite?uid=${user.id}">企业精英</a></dd>
+                <dd><a href="/ddyun/company/companyproduct?uid=${user.id}">企业产品</a></dd>
+                <dd><a href="/ddyun/company/companycase?uid=${user.id}">合作案例</a></dd>
+                <dd><a href="/ddyun/company/companywork?uid=${user.id}">业务范围</a></dd>
+                <dd><a href="/ddyun/company/companyconnect?uid=${user.id}">联系我们</a></dd>
+                <dd><a href="/ddyun/company/companynews?uid=${user.id}">最新消息</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -83,18 +83,20 @@
             <div class="Elite_box">
             	<ul>
                 	<!--循环li 最多8个多的分页 开始-->
+                	<g:each in="${elist}" var="e">
                     <li>
                         <div class="Elite_cont">
-                        	<div class="Elite_img"><img src="../images/1408ssy.jpg"></div>
-                            <div class="Elite_name"><span>沈淑云</span><i>suzzy</i></div>
+                        	<div class="Elite_img"><img src="../ddyunimg/${e.logo }"></div>
+                            <div class="Elite_name"><span>${e.name }</span><i>${e.englishName }</i></div>
                             <div class="Elite_info">
-                            	  <p>大度云计算公司董事长</p>
-                                <p>云计算的运用将会在我国政务、商务方面产生颠覆性革命</p>
+                            	  <p>${e.title }</p>
+                                <p>${e.shortResume }</p>
                                 
                             </div>
                             <a href="#"><div class="Elite_hover"></div></a>
                         </div>
                     </li>
+                    </g:each>
                     <!--循环li 最多8个多的分页 结束-->
                    
                     

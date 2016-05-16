@@ -75,8 +75,10 @@ class CompanyController {
 		render view:'companyconnect',model:[]
 	}
 	def companyelite() {
-		
-		render view:'companyelite',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		def elist = user.companyelites
+		render view:'companyelite',model:[elist:elist,user:user]
 	}
 	def companynews() {
 		
