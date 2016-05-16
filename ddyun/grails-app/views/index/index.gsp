@@ -15,11 +15,8 @@
 <div class="Ibigbg_box" style="background:url(${resource(dir:'images',file:'Ibg.png')}) center top no-repeat;">
 <div class="container relative">
 
-
-
-
-
-    
+	<div class="Ireal_box2" ><iframe src="http://139.196.197.45/viewa.html?rpath=sf/sf14nv.cis.gz&aratio=1.7778&touch=" height="100%" width="100%" frameborder="0"></iframe></div>
+  
     <!--实时状况 开始-->
     <div class="Ireal_box">
     	<div class="Ireal_border">

@@ -30,6 +30,16 @@
 .Ireal_cont .Ireal_text ul li span{position:absolute;top:0;right:10px;line-height:22px;font-size:12px;}
 .Ireal_cont .Ireal_text ul li a:hover{color:#0099ff;}
 /*棣栭〉 鍦嗗湀瀵艰埅*/
+.Ireal_box2{
+	width: 599px;
+	height: 379px;
+	background: rgba(255,255,255,.3);
+	border-radius: 5px;
+	position: absolute;
+	top: 124px;
+	right: 475px;
+	padding: 10px;
+}
 .Iround_box{width:478px;height:90px;position:absolute;right:0;top:435px;overflow:hidden;}
 .Iround_box ul li{width:20%;float:left;text-align:center;}
 .Iround_box ul li a{color:#fff;}
