@@ -109,6 +109,12 @@ class CompanyProductController {
             '*'{ respond companyProductInstance, [status: OK] }
         }
     }
+	
+	def detail (){
+		String pid = params.pid
+		CompanyProduct product = CompanyProduct.get(pid)
+		render(view:"detail",model:[product:product])
+	}
 
     @Transactional
     def delete() {

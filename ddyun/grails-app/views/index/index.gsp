@@ -79,14 +79,14 @@
         <div class="Ishow_border">
         	<ul>
             	<!--循环li 5个 开始-->
-                <li><a href="/ddyun/company/pronav"><img class="Pimg_hover" src="${resource(dir:'images',file:'专精特新领军企业.jpg')}"/></a></li>
+                <li><a href="/ddyun/companyProduct/detail?pid=3"><img class="Pimg_hover" src="${resource(dir:'images',file:'专精特新领军企业.jpg')}"/></a></li>
                 <!--循环li 5个 结束-->
                 
                 <!--例 删除 开始-->
-                <li><a href="/ddyun/company/pronav"><img class="Pimg_hover" src="${resource(dir:'images',file:'上海博物馆藏国之魂宝牺尊.jpg')}"/></a></li>
-                <li><a href="/ddyun/company/pronav"><img class="Pimg_hover" src="${resource(dir:'images',file:'温馨塘桥宜居生活.jpg')}"/></a></li>
-                <li><a href="/ddyun/company/pronav"><img class="Pimg_hover" src="${resource(dir:'images',file:'dadulogo.png')}"/></a></li>
-                <li><a href="/ddyun/company/pronav"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
+                <li><a href="/ddyun/companyProduct/detail?pid=4"><img class="Pimg_hover" src="${resource(dir:'images',file:'上海博物馆藏国之魂宝牺尊.jpg')}"/></a></li>
+                <li><a href="/ddyun/companyProduct/detail?pid=5"><img class="Pimg_hover" src="${resource(dir:'images',file:'温馨塘桥宜居生活.jpg')}"/></a></li>
+                <li><a href="/ddyun/companyProduct/detail?pid=6"><img class="Pimg_hover" src="${resource(dir:'images',file:'dadulogo.png')}"/></a></li>
+                <li><a href="/ddyun/companyProduct/detail?pid=7"><img class="Pimg_hover" src="${resource(dir:'images/temp',file:'case.png')}"/></a></li>
                 <!--例 删除 结束-->
             </ul>
         </div>

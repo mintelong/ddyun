@@ -85,7 +85,7 @@
                     <li>
                         <div class="ComPro_cont">
                         	<div class="ComPro_img">
-                        	  <a href="http://139.196.197.45/viewa.html?rpath=oca/oca_4.cis.gz&touch=">
+                        	  <a href="/ddyun/companyProduct/detail?pid=${p.id}">
                       
                         	<img src="../ddyunimg/${p.logo }">
                         	</a>
