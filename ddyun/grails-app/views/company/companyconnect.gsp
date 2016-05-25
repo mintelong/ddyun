@@ -33,7 +33,7 @@
                 <dd><a href="/ddyun/company/companycase2?uid=${user.id}">合作案例</a></dd>
                 <dd><a href="/ddyun/company/companywork?uid=${user.id}">业务范围</a></dd>
                 <dd class="on"><a href="/ddyun/company/companyconnect?uid=${user.id}">联系我们</a></dd>
-                <dd><a href="/ddyun/company/companynews?uid=${user.id}">最新消息</a></dd>
+                <dd><a href="/ddyun/company/companynews?uid=${user.id}">最新消息(${nc })</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->

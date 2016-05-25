@@ -60,21 +60,23 @@ class CompanyController {
 		def uid = params.uid
 		Member user = Member.get(uid)
 		CompanyCulture cc = user.companycultures.getAt(0)
-		render view:'aboutus',model:[cc:cc,user:user]
+		int nc = CompanyNews.count()
+		render view:'aboutus',model:[cc:cc,user:user,nc:nc]
 	}
 	
 	def companycase2() {
 		def uid = params.uid
 		Member user = Member.get(uid)
 		def clist = user.companycases
-		render view:'companycase',model:[clist:clist,user:user]
+		int nc = CompanyNews.count()
+		render view:'companycase',model:[clist:clist,user:user,nc:nc]
 		
 	}
 	
 	def companycase() {
 		List<CompanyCase> lists = CompanyCase.list()
-		
-		render view:'companycase',model:[lists:lists]
+		int nc = CompanyNews.count()
+		render view:'companycase',model:[lists:lists,nc:nc]
 		
 	}
 	
@@ -82,31 +84,39 @@ class CompanyController {
 		def uid = params.uid
 		Member user = Member.get(uid)
 		CompanyContact cc = user.companycontacts.getAt(0)
-		render view:'companyconnect',model:[cc:cc,user:user]
+		int nc = CompanyNews.count()
+		render view:'companyconnect',model:[cc:cc,user:user,nc:nc]
 	}
 	def companyelite() {
 		def uid = params.uid
 		Member user = Member.get(uid)
 		def elist = user.companyelites
-		render view:'companyelite',model:[elist:elist,user:user]
+		int nc = CompanyNews.count()
+		render view:'companyelite',model:[elist:elist,user:user,nc:nc]
 	}
 	def companynews() {
-		
-		render view:'companynews',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		def nlist = CompanyNews.list()
+		int nc = CompanyNews.count()
+		render view:'companynews',model:[nlist:nlist,user:user,nc:nc]
 	}
 	def companynewsdt() {
 		
 		render view:'companynewsdt',model:[]
 	}
 	def companywork() {
-		
-		render view:'companywork',model:[]
+		def uid = params.uid
+		Member user = Member.get(uid)
+		int nc = CompanyNews.count()
+		render view:'companywork',model:[user:user,nc:nc]
 	}
 	
 	def companyproduct() {
 		def uid = params.uid
 		Member user = Member.get(uid)
 		def plist = user.companyproducts
-		render view:'companyproduct',model:[plist:plist,user:user]
+		int nc = CompanyNews.count()
+		render view:'companyproduct',model:[plist:plist,user:user,nc:nc]
 	}
 }

@@ -32,7 +32,7 @@
                 <dd><a href="/ddyun/company/companycase2?uid=${user.id}">合作案例</a></dd>
                 <dd><a href="/ddyun/company/companywork?uid=${user.id}">业务范围</a></dd>
                 <dd><a href="/ddyun/company/companyconnect?uid=${user.id}">联系我们</a></dd>
-                <dd class="on"><a href="/ddyun/company/companynews?uid=${user.id}">最新消息</a></dd>
+                <dd class="on"><a href="/ddyun/company/companynews?uid=${user.id}">最新消息(${nc })</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -80,15 +80,18 @@
             <!--详情 开始-->
             <div class="CopInfo_box">
             	<ul>
+            	<g:each in="${nlist}" var="n">
+            		<a href="/ddyun/companyNews/detail?nid=${n.id}">
                 	<!--循环li 最多4个多的分页 开始-->
                     <li>
                         <div class="CopInfo_cont">
-                        	<h3>大度云计算有限公司最新招聘计划启动</h3>
-                            <p>招聘信息是指利用各种传播工具发布人员招聘相关信息，鼓励和吸引人员参加应聘。在发布招聘信息时主要应注意信息发布的范围、时间，及招聘对象的层次。发布招聘信  鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘鼓励和吸引人员参加应聘</p>
-                            <span>2016-04-05</span>
+                        	<h3>${n.title}</h3>
+                            <p>${n.content}</p>
+                            <span><g:formatDate date="${n.date}" format="yyyy-MM-dd"/></span>
                         </div>
                     </li>
-                    
+                    </a>
+                 </g:each>   
                 </ul>
             </div>
             <!--详情 结束-->
