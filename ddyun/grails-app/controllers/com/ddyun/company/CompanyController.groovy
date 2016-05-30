@@ -119,4 +119,9 @@ class CompanyController {
 		int nc = CompanyNews.count()
 		render view:'companyproduct',model:[plist:plist,user:user,nc:nc]
 	}
+	
+	def questions() {
+		
+		render view:'questions',model:[]
+	}
 }

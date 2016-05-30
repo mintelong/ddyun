@@ -49,7 +49,7 @@
     <div class="Iround_box">
     	<ul>
         	<li><a href="/ddyun/company/law2"><i class="qicont"></i><p>企业导航</p></a></li>
-            <li><a href=".html"><i class="qicont"></i><p>智囊库</p></a></li>
+            <li><a href="/ddyun/company/questions"><i class="qicont"></i><p>智囊库</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>资料下载</p></a></li>
             <li><a href="/ddyun/index/rocfculture"><i class="qicont"></i><p>中国侨联</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>常用工具</p></a></li>
