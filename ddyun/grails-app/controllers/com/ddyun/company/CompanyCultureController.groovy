@@ -1,12 +1,16 @@
 package com.ddyun.company
 
-
-
 import static org.springframework.http.HttpStatus.*
 import com.ddyun.security.Member
 import grails.transaction.Transactional
 import org.springframework.web.multipart.MultipartFile
 import com.ddyun.common.FileHandle
+
+import com.ddyun.dataCenter.*
+import com.mongodb.BasicDBObject
+import com.mongodb.DB
+import com.mongodb.DBCollection
+import com.mongodb.Mongo
 
 @Transactional(readOnly = true)
 class CompanyCultureController {
@@ -64,6 +68,25 @@ class CompanyCultureController {
 		}
 
         companyCultureInstance.save flush:true
+		
+		//数据同步到数据中心
+		/*Mongo mongo = new Mongo("139.196.197.45", 27017);
+		DB db = mongo.getDB("HSCSPDevDB");
+		DBCollection dataType = db.getCollection("dataType")
+		DBCollection dataInfo = db.getCollection("dataInfo")
+		DBCollection dataDetail = db.getCollection("dataDetail")
+		
+		BasicDBObject doc_info = new BasicDBObject();
+		doc_info.put("tablename", "company_culture");
+		doc_info.put("description", companyCultureContent);
+		doc_info.put("type", "txt");
+		doc_info.put("ispublish", true);
+		doc_info.put("visitnum", 0);
+		doc_info.put("isdelete", false);
+		doc_info.put("fieldnum", 3);
+		doc_info.put("dataType", 6);
+		
+		dataInfo.insert(doc_info);*/
 
         /*request.withFormat {
             form multipartForm {

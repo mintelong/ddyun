@@ -102,6 +102,21 @@
                             </div>
                         </div>
                     </li>
+                    
+                    <li>
+                        <div class="ComPro_cont">
+                        	<div class="ComPro_img">
+                        	  <a href="">
+                      
+                        	<img src="../images/温馨塘桥宜居生活.jpg">
+                        	</a>
+                        	</div>
+                            <div class="ComPro_title">
+                            	<p>大度农业源头产品</p>
+                                <a href=".html">购买</a>
+                            </div>
+                        </div>
+                    </li>
                     <!--例 删除 结束-->
                 </ul>
             </div>
