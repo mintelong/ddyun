@@ -70,15 +70,19 @@ class CompanyCultureController {
         companyCultureInstance.save flush:true
 		
 		//数据同步到数据中心
-		/*Mongo mongo = new Mongo("139.196.197.45", 27017);
+		Mongo mongo = new Mongo("139.196.197.45", 27017);
 		DB db = mongo.getDB("HSCSPDevDB");
 		DBCollection dataType = db.getCollection("dataType")
 		DBCollection dataInfo = db.getCollection("dataInfo")
 		DBCollection dataDetail = db.getCollection("dataDetail")
 		
+		long count = dataInfo.getCount()
+		println "count:"+count
+		
 		BasicDBObject doc_info = new BasicDBObject();
-		doc_info.put("tablename", "company_culture");
-		doc_info.put("description", companyCultureContent);
+		doc_info.put("_id", count+10);
+		doc_info.put("tablename", companyName);
+		doc_info.put("describe", companyTitle);
 		doc_info.put("type", "txt");
 		doc_info.put("ispublish", true);
 		doc_info.put("visitnum", 0);
@@ -86,7 +90,7 @@ class CompanyCultureController {
 		doc_info.put("fieldnum", 3);
 		doc_info.put("dataType", 6);
 		
-		dataInfo.insert(doc_info);*/
+		dataInfo.insert(doc_info);
 
         /*request.withFormat {
             form multipartForm {

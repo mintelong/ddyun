@@ -6,6 +6,11 @@ import org.springframework.web.multipart.MultipartFile
 import com.ddyun.common.FileHandle
 import com.ddyun.security.Member
 
+import com.mongodb.BasicDBObject
+import com.mongodb.DB
+import com.mongodb.DBCollection
+import com.mongodb.Mongo
+
 @Transactional(readOnly = true)
 class CompanyNewsController {
 	
@@ -70,6 +75,29 @@ class CompanyNewsController {
 		}
 
         companyNewsInstance.save flush:true
+		
+		//数据同步到数据中心
+		Mongo mongo = new Mongo("139.196.197.45", 27017);
+		DB db = mongo.getDB("HSCSPDevDB");
+		DBCollection dataType = db.getCollection("dataType")
+		DBCollection dataInfo = db.getCollection("dataInfo")
+		DBCollection dataDetail = db.getCollection("dataDetail")
+		
+		long count = dataInfo.getCount()
+		println "count:"+count
+		
+		BasicDBObject doc_info = new BasicDBObject();
+		doc_info.put("_id", count+10);
+		doc_info.put("tablename", title);
+		doc_info.put("describe", content);
+		doc_info.put("type", "txt");
+		doc_info.put("ispublish", true);
+		doc_info.put("visitnum", 0);
+		doc_info.put("isdelete", false);
+		doc_info.put("fieldnum", 3);
+		doc_info.put("dataType", 6);
+		
+		dataInfo.insert(doc_info);
 
         /*request.withFormat {
             form multipartForm {
