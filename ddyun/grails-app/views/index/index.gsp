@@ -99,17 +99,22 @@
         <div class="Inews_tab">
         	<ul>
             	<li class="on"><span onclick="tabShow(this,'list_','one')">新闻动态</span></li>
+            	 <!--
                 <li><span onclick="tabShow(this,'list_','two')">需求时讯</span></li>
+                -->
             </ul>
-            <a href=".html"><span>MORE<i></i></span></a>
+            <a href="/ddyun/index/companynews"><span>MORE<i></i></span></a>
         </div>
         <!--选项卡 结束-->
         
         <!--新闻动态 开始-->
         <div class="Inews_list" id="list_one">
         	<ul>
-       			<g:each in="${newsList}" var="news">
+       			<g:each status="i" in="${newsList}" var="news">
+       			    <g:if test="${ ( i < 8 )  }">  
+                     
                   	<li><a href="/ddyun/companyNews/detail?nid=${news.id}"><p><i></i>${news.title}</p></a></li>
+                  	</g:if>
                   </g:each>
             </ul>
         </div>
