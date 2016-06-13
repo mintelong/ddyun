@@ -194,7 +194,7 @@
 
 /*渚ㄨ仈鏂囧寲 渚ㄨ仈鏂囧寲鍒楄〃*/
 .RocfCul_box{margin-top:-200px;}
-.RocfCul_list{width:100%;height:280px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
+.RocfCul_list{width:100%;height:460px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
 .RocfCul_list dl dt{width:100%;height:56px;line-height:56px;padding:15px 0 15px 24px;border-bottom:1px solid #81A1DE;}
 .RocfCul_list dl dt i{width:91px;height:26px;display:block;background-position:-738px -95px;vertical-align:middle;}
 .RocfCul_list dl dd{width:100%;height:30px;line-height:30px;padding-left:20%;}
