@@ -221,7 +221,7 @@
 
 /*浼佷笟瀵艰埅*/
 .Coplaw_box{margin-top:-200px;}
-.Coplaw_list{width:100%;height:280px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
+.Coplaw_list{width:100%;height:380px;background:rgba(255,255,255,.3);border-top-left-radius:5px;border-top-right-radius:5px;}
 .Coplaw_list dl dt{width:100%;height:56px;line-height:56px;padding:15px 0 15px 24px;border-bottom:1px solid #81A1DE;}
 .Coplaw_list dl dt i{width:130px;height:26px;display:block;background-position:-736px -140px;vertical-align:middle;}
 .Coplaw_list dl dd{width:100%;height:30px;line-height:30px;padding-left:20%;}

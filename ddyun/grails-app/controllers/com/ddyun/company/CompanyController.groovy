@@ -51,6 +51,12 @@ class CompanyController {
 		render view:'law2',model:[companyList:companyList]
 	}
 	
+	def filtercomapny() {
+		String type = params.type
+		def companyList = CompanyCulture.findAllByType("type":type)
+		render view:'law2',model:[companyList:companyList]
+	}
+	
 	def pronav() {
 		
 		render view:'pronav',model:[]

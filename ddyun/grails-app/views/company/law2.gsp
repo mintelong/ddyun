@@ -31,13 +31,15 @@
         <div class="Coplaw_list">
         	<dl>
             	<dt><i class="qicont"></i></dt>
-                <dd><a href="#">法律法规</a></dd>
-                <dd class="on"><a href="#"><i></i>国际法</a></dd>
-                <dd><a href="#"><i></i>国内法</a></dd>
-                <dd><a href="#">企业</a></dd>
-                <dd><a href="#"><i></i>内资企业</a></dd>
-                <dd><a href="#"><i></i>外资企业</a></dd>
-                <dd><a href="#">民生</a></dd>
+                <dd><a href="#">国外企业</a></dd>
+                <dd><a href="#"><i></i>亚马逊</a></dd>
+                <dd><a href="/ddyun/company/law2">国内企业</a></dd>
+                <dd class="on"><a href="/ddyun/company/filtercomapny?type=金融"><i></i>金融</a></dd>
+                <dd><a href="/ddyun/company/filtercomapny?type=法律"><i></i>法律</a></dd>
+                <dd><a href="/ddyun/company/filtercomapny?type=IT"><i></i>IT</a></dd>
+                <dd><a href="/ddyun/company/filtercomapny?type=健康"><i></i>健康</a></dd>
+                <dd><a href="/ddyun/company/filtercomapny?type=教育"><i></i>教育</a></dd>
+                <dd><a href="/ddyun/company/filtercomapny?type=旅游"><i></i>旅游</a></dd>
             </dl>
         </div>
         <!--企业文化列表 结束-->
@@ -71,8 +73,8 @@
                     </ul>
                 </div>
                 <div class="Coplaw_search">
-                	<input type="text" name="" value="" class="input-text H30 WW50 radius3">
-                    <input type="button" name="" value="搜索" class="btn btn-primary radius3 H30 Pd0 W55">
+                	<input type="text" name="type" id="type" value="" class="input-text H30 WW50 radius3">
+                    <input type="button" onclick="search()" name="" value="搜索" class="btn btn-primary radius3 H30 Pd0 W55">
                     <!--搜索按钮标签可更换，只要把 class="btn btn-primary radius3 H30 Pd0 W55" 加上即可-->
                 </div>
             </div>
@@ -140,6 +142,11 @@ function tabShow(obj,prex,num){
 		$(this).css('display','none');
 	})
 	$('#'+ prex + num ).css('display','block')	
+}
+
+function search(){
+	var type = $("#type").val()
+	window.location.href="/ddyun/company/filtercomapny?type="+type;
 }
 </script>
 </body>
