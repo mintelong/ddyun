@@ -57,6 +57,18 @@
 			                        </span>
 			                    </li>
 			                    <li>
+			                        <span><i class="Required">*</i>企业类别：
+			                        	<select id="type" name="type" >
+											<option value="金融">金融</option>
+											<option value="法律">法律</option>
+											<option value="IT">IT</option>
+											<option value="健康">健康</option>
+											<option value="教育">教育</option>
+											<option value="旅游">旅游</option>
+                                    </select>
+			                        </span>
+			                    </li>
+			                    <li>
 			                        <span><i class="Required">*</i>文化标题：
 			                        	<input type="text" name="companyTitle" id="companyTitle" value="">
 			                        </span>

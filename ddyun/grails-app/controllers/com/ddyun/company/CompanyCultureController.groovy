@@ -43,12 +43,14 @@ class CompanyCultureController {
 		String companyName = request.getParameter("companyName")
 		String companyTitle = request.getParameter("companyTitle")
 		String companyCultureContent = request.getParameter("companyCultureContent")
+		String type = request.getParameter("type")
 		
 		CompanyCulture companyCultureInstance = new CompanyCulture()
 		companyCultureInstance.companyName = companyName
 		companyCultureInstance.companyTitle = companyTitle
 		companyCultureInstance.companyCultureContent = companyCultureContent
 		companyCultureInstance.date = new Date()
+		companyCultureInstance.type = type
 		companyCultureInstance.member = member
 		
         MultipartFile logo = request.getFile("logo")

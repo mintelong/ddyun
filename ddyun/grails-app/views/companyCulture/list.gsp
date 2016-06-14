@@ -61,6 +61,7 @@
                 	<thead>
                     	<tr bgcolor="#f5f5f5">
                         	<th>企业名称</th>
+                        	<th>企业类别</th>
                         	<th>企业文化标题</th>
                             <th>企业文化内容</th>
                             <th>企业图片</th>
@@ -73,6 +74,7 @@
                     	<g:each in="${lists}" var="company">
                     		<tr>
 	                        	<td>${company.companyName}</td>
+	                        	<td>${company.type}</td>
 	                        	<td>${company.companyTitle}</td>
 	                            <td>${company.companyCultureContent}</td>
 	                            <td><img src="/ddyun/ddyunimg/${company.logo}" width="40" height="40"/></td>
