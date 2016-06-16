@@ -4,7 +4,7 @@ import com.ddyun.company.CompanyNews
 class IndexController {
 
     def index() {
-		def newsList = CompanyNews.list()
+		def newsList = CompanyNews.list(sort:"date", order:"desc")
 		render view:"index",model:[newsList:newsList]
 	}
 	
@@ -36,5 +36,7 @@ class IndexController {
 	def rockteam() {}
 	
 	def rockword() {}
+	
+	def uscenter() {}
 	
 }
