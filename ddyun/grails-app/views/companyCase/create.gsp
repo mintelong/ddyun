@@ -65,7 +65,11 @@
 			                        	<input type="file" name="logo" id="logo" value="">
 			                        </span>        
 			                    </li>
-
+								 <li>
+			                        <span><i class="Required">*</i>产品链接：
+			                        	<input type="text" name="url" id="url" value="">
+			                        </span>        
+			                    </li>
 			                    <li><button onclick="submitForm()" class="btn btn-primary radius4">保存</button></li>
 			                </ul>
 			            </div>

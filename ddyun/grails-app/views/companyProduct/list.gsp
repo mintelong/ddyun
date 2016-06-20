@@ -35,14 +35,11 @@
             	<dt><em class="qicont"></em></dt>
                 <dd><a href="/ddyun/usercenter/index">我的信息</a></dd>
                 <dd><a href="/ddyun/companyCase/list">合作案例</a></dd>
-                <dd><a href="/ddyun/companyCulture/list">企业文化</a></dd>
+                <dd><a href="/ddyun/companyCulture/list">入驻企业</a></dd>
                 <dd><a href="/ddyun/companyElite/list">企业精英</a></dd>
                 <dd><a href="/ddyun/companyNews/list">企业新闻</a></dd>
                 <dd class="on"><a href="/ddyun/companyProduct/list">企业产品</a></dd>
-                <dd><a href="/ddyun/rocfCulture/list">侨联文化</a></dd>
-                <dd><a href="/ddyun/rocfLeader/list">侨联领导</a></dd>
-                <dd><a href="/ddyun/rocfNews/list">侨联新闻</a></dd>
-                <dd><a href="/ddyun/rocfWord/list">中国侨联</a></dd>
+              
                 <dd><a href="/ddyun/companyContact/list">联系我们</a></dd>
             </dl>
         </div>

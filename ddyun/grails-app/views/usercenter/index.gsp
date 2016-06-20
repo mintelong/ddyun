@@ -34,8 +34,8 @@
         	<dl>
             	<dt><em class="qicont"></em></dt>
                 <dd class="on"><a href="/ddyun/usercenter/index">用户中心</a></dd>
-                <dd><a href="/ddyun/companyCase/list">发布信息</a></dd>
-                <dd><a href="http://139.196.197.45:8080/hscsp/">大数据平台</a></dd>
+                <dd><a href="/ddyun/companyCase/list">企业信息上传</a></dd>
+                <dd><a href="http://139.196.197.45:8080/hscsp/">需求信息发布</a></dd>
                 
             </dl>
         </div>

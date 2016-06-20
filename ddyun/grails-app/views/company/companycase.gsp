@@ -42,9 +42,7 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
                 <!--循环dd 7个 开始-->
-                <g:each in="${clist}" var="c">
-               <dd><a href="#">${c.name}</a></dd>
-               </g:each>
+              
                 <!--例 删除 结束-->
             </dl>
         </div>
@@ -75,6 +73,7 @@
             <div class="CopCul_title">
                 <a href="index.html">返回首页</a>
                 <h3>合作案例</h3>
+                
             </div>
             <!--标题 结束-->
 
@@ -91,8 +90,25 @@
                         </div>
                     </li>
                    </g:each> 
-            	
+            	 
                 	
+                </ul>
+                
+                
+                <ul>
+                	<!--循环li 最多12个多的分页 开始-->
+                	 <g:each in="${clist}" var="c">
+                		 <li>
+                        <div class="ComCase_cont">
+               			<a href="//${c.url}"><img src="/ddyun/ddyunimg/${c.logo}"></a>
+               			</div>
+               			 </li>
+               			
+              		 </g:each>
+                    
+                        	
+                    
+                    <!--例 删除 结束-->
                 </ul>
             </div>
             <!--产品列表 结束-->

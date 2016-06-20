@@ -53,7 +53,18 @@ class CompanyController {
 	
 	def filtercomapny() {
 		String type = params.type
-		def companyList = CompanyCulture.findAllByType("type":type)
+		def companyList = CompanyCulture.findAllByType(type)
+		
+		def companyAll = CompanyCulture.findAll();
+		
+		for(CompanyCulture culture:companyAll){
+			println culture.companyName
+			println culture.type
+			
+		}
+		
+		println "====type:"+type
+		
 		render view:'law2',model:[companyList:companyList]
 	}
 	

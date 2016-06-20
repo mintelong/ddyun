@@ -20,22 +20,25 @@
     <!--实时状况 开始-->
     <div class="Ireal_box">
     	<div class="Ireal_border">
-        	<!--标题 开始-->
+        	<!--标题 开始-->	
             <div class="Ireal_title"><i class="qicont"></i></div>
             <!--标题 结束-->
             
             <!--新闻内容 开始-->
             <div class="Ireal_cont">
             	<!--展示图片 开始-->
-                <div class="Ireal_img"><img src="${resource(dir:'images',file:'road.png')}"/></div>
+               
                 <!--展示图片 结束-->
                 
                 <!--新闻列表 开始-->
                 <div class="Ireal_text">
                 	<ul>
-                	<g:each in="${newsList}" var="news">
-                    	<li><a href="#"><p><i></i>${news.title}</p><span><g:formatDate date="${news.date}" format="MM-dd"/></span></a></li>
-                    </g:each>
+                	<g:each status	="i" in="${newsList}" var="news">
+       			    <g:if test="${  i <8}">  
+                     
+                  	<li><a href="/ddyun/companyNews/detail?nid=${news.id}"><p><i></i>${news.title}</p></a></li>
+                  	</g:if>
+                  </g:each>
                     </ul>
                 </div>
                 <!--新闻列表 结束-->
@@ -51,7 +54,7 @@
         	<li><a href="/ddyun/company/law2"><i class="qicont"></i><p>企业导航</p></a></li>
             <li><a href="/ddyun/company/questions"><i class="qicont"></i><p>智囊库</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>资料下载</p></a></li>
-            <li><a href="/ddyun/index/rocfculture"><i class="qicont"></i><p>中国侨联</p></a></li>
+            <li><a href="/ddyun/index/rocfculture"><i class="qicont"></i><p>大度商城</p></a></li>
             <li><a href=".html"><i class="qicont"></i><p>常用工具</p></a></li>
         </ul>
     </div>
@@ -111,7 +114,7 @@
         <div class="Inews_list" id="list_one">
         	<ul>
        			<g:each status="i" in="${newsList}" var="news">
-       			    <g:if test="${ ( i < 8 )  }">  
+       			    <g:if test="${  i <8}">  
                      
                   	<li><a href="/ddyun/companyNews/detail?nid=${news.id}"><p><i></i>${news.title}</p></a></li>
                   	</g:if>
