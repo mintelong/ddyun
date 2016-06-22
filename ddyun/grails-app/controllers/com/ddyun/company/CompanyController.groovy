@@ -2,9 +2,13 @@ package com.ddyun.company
 
 import com.ddyun.security.Member
 
+
+
 class CompanyController {
 	
 	def springSecurityService
+	
+ 
 
     def product() {
 		
@@ -47,9 +51,37 @@ class CompanyController {
 	}
 	
 	def law2() {
-		def companyList = CompanyCulture.list()
-		render view:'law2',model:[companyList:companyList]
+		def companyList = CompanyCulture.list(sort:"date", order:"desc")
+		
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+			
+		//params.max = 15;
+		params.offset = params.offset ? params.offset.toInteger() : 0;
+		
+		//def ccc = companyList.findAll("companyName",[max:10,offset:params.offset.toInteger()]);
+		def ccc = companyList.findAll();
+		def total = ccc.count;
+		
+	
+		render view:'law2',model:[companyList:companyList,total:total]
 	}
+	def law3() {
+		def companyList = CompanyCulture.list(sort:"date", order:"desc")
+		
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+			
+		//params.max = 15;
+	params.offset = params.offset ? params.offset.toInteger() : 0;
+		
+		//def ccc = companyList.findAll("companyName",[max:10,offset:params.offset.toInteger()]);
+		def ccc = companyList.findAll();
+		def total = ccc.count;
+		
+	
+		render view:'law3',model:[companyList:companyList,total:total]
+	}
+	   
+	
 	
 	def filtercomapny() {
 		String type = params.type
@@ -62,10 +94,17 @@ class CompanyController {
 			println culture.type
 			
 		}
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+		//params.offset = params.offset ? params.offset.toInteger() : 0;
+		params.offset =0;
+		def offsetAfter = params.offset + 15
+		//def ccc = companyList.findAll("companyName",[max:10,offset:params.offset.toInteger()]);
+		def ccc = CompanyCulture.findAll();
+		def total = ccc.count;
 		
-		println "====type:"+type
+	
 		
-		render view:'law2',model:[companyList:companyList]
+		render view:'law2',model:[companyList:companyList,total:total]
 	}
 	
 	def pronav() {

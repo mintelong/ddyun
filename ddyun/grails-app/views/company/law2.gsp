@@ -89,23 +89,59 @@
 .CoplawT_text p{line-height:24px;color:#949494;height:70px;overflow:hidden;}
 </style>
             <!--详情1 开始-->
+              
             <div class="CoplawT_info" id="list_one">
+          
             	<ul>
+            	 <g:paginate total="${total}" />
                 	<!--循环li 开始-->
-                <g:each in="${companyList}" var="company">
-                    <li>
+   				
+  
+              
+               		<g:each status	="i" in="${companyList}" var="company">
+       			    <g:if test="${  i <15}">  
+                     
+                  	<li>
+                  
+                	
+                  
                     	<a href="/ddyun/company/aboutus?uid=${company.member.id }">
+                    	
+              
                         <div class="CoplawT_img"><img class="Pimg_hover" src="/ddyun/ddyunimg/${company.logo}"/></div>
                         <div class="CoplawT_text">
                         	<h3>${company.companyName}</h3>
                             <p>${company.companyTitle}</p>
                         </div>
+                        
                         </a>
                     </li>
+                    	</g:if>
                   </g:each>
+                 
                 </ul>
             </div>
             <!--详情1 结束-->
+              <div class="Elite_page">
+            	<div class="Elite_line"></div>
+            	
+                <ul>
+                	<li><a href="/ddyun/company/law2">首页</a></li>
+                    <!--上一页 开始-->
+                    <li><a href="/ddyun/company/law2"><</a></li>
+                    <!--上一页 结束-->
+                    
+                    <!--页数 开始-->
+                    <li class="on"><a href="/ddyun/company/law2">1</a></li>
+                    <li><a href="/ddyun/company/law3">2</a></li>
+                    <!--页数 结束-->
+                    
+                    <!--下一页 开始-->
+                    <li><a href="/ddyun/company/law3">></a></li>
+                    <!--下一页 结束-->
+                    <li><a href="/ddyun/company/law3">末页</a></li>
+                </ul>
+            </div>
             
             <!--详情2 开始-->
             <div class="Coplaw_Linfo" id="list_two" style="display:none;">
