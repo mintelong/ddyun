@@ -36,7 +36,12 @@ class IndexController {
 	def rockteam() {}
 	
 	def rockword() {}
+	//
 	
 	def uscenter() {}
+	
+	def serviceagreement(){}
+	
+	def privacy(){}
 	
 }

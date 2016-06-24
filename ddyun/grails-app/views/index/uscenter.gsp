@@ -27,8 +27,8 @@
         	<dl>
             	<dt><i class="qicont"></i></dt>
                 <dd class="on"><a href="/ddyun/index/uscenter">客服支持</a></dd>
-                <dd><a href="/ddyun/usermanusal/userargeement">服务协议</a></dd>
-                <dd><a href="/ddyun/index/companyproduct">隐私政策</a></dd>
+                <dd><a href="/ddyun/index/serviceagreement">服务协议</a></dd>
+                <dd><a href="/ddyun/index/privacy">隐私政策</a></dd>
             
             </dl>
         </div>
@@ -69,13 +69,13 @@
         	<!--标题 开始-->
             <div class="CopCul_title">
                 <a href="index.html">返回首页</a>
-                <h3>企业文化</h3>
+                <h3>客服中心</h3>
             </div>
             <!--标题 结束-->
             
             <!--详情 开始-->
             <div class="CopCnect_box">
-            	<label>齐云大度  共创辉煌</label>
+            	<label>客户服务</label>
                 <p>		这里是客户服务中心</p>         
             </div>
            

@@ -26,7 +26,7 @@
 <div class="row">
 <div class="Coplaw_box">
     <!--左边 开始-->
-    <div class="col-md-3">
+    <div class="col-	md-3">
     	<!--企业文化列表 开始-->
         <div class="Coplaw_list">
         	<dl>
