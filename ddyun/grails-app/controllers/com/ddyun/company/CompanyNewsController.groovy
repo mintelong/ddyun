@@ -47,7 +47,8 @@ class CompanyNewsController {
 		companyNewsInstance.content = content
 		companyNewsInstance.date = new Date()
 		companyNewsInstance.member = member
-			
+		companyNewsInstance.username = member.username 
+		
         if (companyNewsInstance == null) {
             notFound()
             return

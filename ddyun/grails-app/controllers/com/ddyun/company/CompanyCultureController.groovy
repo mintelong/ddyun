@@ -51,6 +51,7 @@ class CompanyCultureController {
 		companyCultureInstance.companyCultureContent = companyCultureContent
 		companyCultureInstance.date = new Date()
 		companyCultureInstance.type = type
+		companyCultureInstance.username = member.username
 		companyCultureInstance.member = member
 		
         MultipartFile logo = request.getFile("logo")

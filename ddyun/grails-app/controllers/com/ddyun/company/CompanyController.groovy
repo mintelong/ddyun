@@ -180,4 +180,67 @@ class CompanyController {
 		
 		render view:'questions',model:[]
 	}
+	
+	def newscenter() {
+		def companyList = CompanyNews.list(sort:"date", order:"desc")
+		
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+			
+		//params.max = 15;
+		params.offset = params.offset ? params.offset.toInteger() : 0;
+		
+		def ccc = companyList.findAll();
+		def total = ccc.count;
+		
+	
+		render view:'newscenter',model:[companyList:companyList,total:total]
+	}
+	
+	def filtercomapnynews() {
+		String type = params.type
+		def companyList = CompanyCulture.findAllByType(type)
+		def cnlist = new ArrayList()
+				
+		for(CompanyCulture companyCulture:companyList){
+			
+			
+			def companyNewsAll = CompanyNews.findAll();
+		
+			for(CompanyNews companyNews:companyNewsAll){
+			if(companyNews.username == companyCulture.username){
+				cnlist.add(companyNews)
+				}
+			}
+		}
+			
+			
+		
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+		//params.offset = params.offset ? params.offset.toInteger() : 0;
+		params.offset =0;
+		def offsetAfter = params.offset + 15
+		
+		def total = cnlist.count;
+		
+	
+		
+		render view:'newscenter',model:[companyList:cnlist,total:total]
+	}
+	
+	def newscenter2() {
+		def companyList = CompanyNews.list(sort:"date", order:"desc")
+		
+		params.max = Math.min(params.max ? params.max.toInteger() : 15,  100)
+			
+		//params.max = 15;
+	params.offset = params.offset ? params.offset.toInteger() : 0;
+		
+		//def ccc = companyList.findAll("companyName",[max:10,offset:params.offset.toInteger()]);
+		def ccc = companyList.findAll();
+		def total = ccc.count;
+		
+	
+		render view:'newscenter2',model:[companyList:companyList,total:total]
+	
+	}
 }

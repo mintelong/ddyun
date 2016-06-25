@@ -11,7 +11,7 @@ class CompanyCulture {
 	String logo;
 	
 	String type;//企业类别
-	
+	String username;
 	static belongsTo = [member:Member]
 	
     static constraints = {
@@ -21,7 +21,7 @@ class CompanyCulture {
 		date nullable: true
 		
 		type nullable: true
-		
+		username nullable: true
 		member nullable: true
     }
 	

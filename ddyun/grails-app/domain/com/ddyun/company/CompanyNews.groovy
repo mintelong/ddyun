@@ -8,7 +8,7 @@ class CompanyNews {
 	String content;
 	String logo;
 	Date date;
-	
+	String username;
 	static belongsTo = [member:Member]
 
     static constraints = {
@@ -16,7 +16,7 @@ class CompanyNews {
 		content nullable: true
 		logo nullable: true
 		date nullable: true
-		
+		username nullable: true
 		member nullable: true
     }
 }
