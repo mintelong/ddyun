@@ -1,5 +1,6 @@
 package com.ddyun.index
 import com.ddyun.company.CompanyNews
+import com.ddyun.dataCenter.Words
 
 class IndexController {
 
@@ -38,7 +39,10 @@ class IndexController {
 	def rockword() {}
 	//
 	
-	def uscenter() {}
+	def uscenter() {
+		def wlist = Words.list()
+		render view:"uscenter",model:[wlist:wlist]
+	}
 	
 	def serviceagreement(){}
 	

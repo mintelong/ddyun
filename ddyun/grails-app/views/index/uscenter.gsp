@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page import="com.ddyun.dataCenter.Words" %>
 <html>
 <head>
 <meta name="layout" content="main">
@@ -47,7 +48,7 @@
         
         <!--留言版 开始-->
         <div class="CopCul_liuyan">
-        	<a href=".html">留言板</a>
+        	<a href="/ddyun/words/ask">留言板</a>
         </div>
         <!--留言版 开始-->
         
@@ -76,7 +77,12 @@
             <!--详情 开始-->
             <div class="CopCnect_box">
             	<label>客户服务</label>
-                <p>		这里是客户服务中心</p>         
+            	<g:each var="w" in="${wlist}">
+	                <p>用户"${w.member.username }" 留下了关于 " ${w.title }" 的留言</p>      
+	                <p>留言内容： ${w.words }</p>
+	                <p>客服回答： ${w.reply }</p> 
+	                <br>   
+                </g:each> 
             </div>
            
             <!--详情 结束-->
