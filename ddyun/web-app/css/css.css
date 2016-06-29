@@ -102,7 +102,7 @@
 .CopCul_info dl dd a{color:#fff;}
 .CopCul_info dl dd:hover{color:orange;}
 .CopCul_info dl dd:hover a{color:orange;}
-/*浼佷笟鏂囧寲 鐣欒█鏉�/
+/*浼佷笟鏂囧寲 鐣欒█鏉*/
 .CopCul_liuyan{width:100%;height:45px;line-height:45px;margin-top:10px;background:url(../images/companybook.png) bottom left no-repeat #173f60;text-align:center;}
 .CopCul_liuyan a{color:#fff;font-size:16px;display:block;}
 .CopCul_liuyan:hover{background:url(../images/companybook.png) bottom left no-repeat #143754;}
