@@ -5,10 +5,14 @@ package com.ddyun.dataCenter
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+import com.ddyun.security.Member
+
 @Transactional(readOnly = true)
 class WordsController {
+	
+	def springSecurityService
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [add: "POST", save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -24,7 +28,21 @@ class WordsController {
     }
 	
 	def ask() {
+		respond new Words(params)
+	}
+	
+	@Transactional
+	def add(Words wordsInstance) {
 		
+		//获取用户基本信息
+		def user = springSecurityService.getCurrentUser()
+		Member member = (Member)user
+		
+		wordsInstance.member = member
+
+		wordsInstance.save flush:true
+
+		redirect(controller: "index", action: "uscenter")
 	}
 
     @Transactional
