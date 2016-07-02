@@ -79,7 +79,7 @@
             	<label>客户服务</label>
             	<g:each var="w" in="${wlist}">
 	                <p>用户"${w.member.username }" 留下了关于 " ${w.title }" 的留言</p>      
-	                <p>留言内容： ${w.words }</p>
+	                <p>留言内容： ${w.words }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/ddyun/words/reply?wid=${w.id}">回复</a></p>
 	                <p>客服回答： ${w.reply }</p> 
 	                <br>   
                 </g:each> 

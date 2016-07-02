@@ -1,6 +1,7 @@
 package com.ddyun.security
 
 import com.ddyun.company.*
+import com.ddyun.dataCenter.Words
 import com.ddyun.rocf.*
 
 class Member implements Serializable {
@@ -26,7 +27,8 @@ class Member implements Serializable {
 					  rocfcultures:RocfCulture,
 					  rocfleaders:RocfLeader,
 					  rocfnews:RocfNews,
-					  rocfwords:RocfWord
+					  rocfwords:RocfWord,
+					  words:Words
 					  ]
 
 	Member(String username, String password) {

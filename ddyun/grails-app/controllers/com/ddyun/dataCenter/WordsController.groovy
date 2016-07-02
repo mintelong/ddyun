@@ -12,7 +12,7 @@ class WordsController {
 	
 	def springSecurityService
 
-    static allowedMethods = [add: "POST", save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [add: "POST", save: "POST", replysave: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -41,6 +41,27 @@ class WordsController {
 		wordsInstance.member = member
 
 		wordsInstance.save flush:true
+
+		redirect(controller: "index", action: "uscenter")
+	}
+	
+	@Transactional
+	def reply(){
+		def wid = request.getParameter("wid")
+		Words ws = Words.get(wid)
+		render view:"reply",model:[ws:ws]
+	}
+	
+	@Transactional
+	def replysave() {
+		def wid = params.id
+		def reply = params.reply
+		println(wid + "-------------------")
+		println(reply + "-------------------")
+		Words ws = Words.get(wid)
+		ws.setReply(reply)
+		
+		ws.save flush:true
 
 		redirect(controller: "index", action: "uscenter")
 	}
